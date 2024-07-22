@@ -22,6 +22,7 @@ export default {
         gray: "#80848F",
         buttonBg: "#F2F5F7",
         green: "#D3EDED",
+        darkGreen: "#027373",
       },
     },
   },
