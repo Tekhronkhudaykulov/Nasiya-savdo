@@ -271,4 +271,14 @@ const Orders = () => {
   );
 };
 
-export { Favourite, Scale, Star, Basket, RuIcon, UzIcon };
+export {
+  Favourite,
+  Scale,
+  Star,
+  Basket,
+  RuIcon,
+  Orders,
+  Ava,
+  UserProfile,
+  UzIcon,
+};

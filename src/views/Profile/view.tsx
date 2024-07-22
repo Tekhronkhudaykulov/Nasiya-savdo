@@ -1,15 +1,9 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import {
-  Logout,
-  Payment,
-  Sales,
-  UserProfile,
-  Orders,
-  Ava,
-} from "../../assets/icon";
+
 import { Footer } from "../../layouts";
 import "./profile.scss";
 import BreadCrumb from "../../components/breadCump/view";
+import { Ava, Orders, UserProfile } from "../../assets/icon";
 
 const Profile = () => {
   const { pathname } = useLocation();
@@ -28,17 +22,17 @@ const Profile = () => {
     {
       name: "Мои рассрочки",
       link: "/profile/orders",
-      icon: <Sales />,
+      icon: <Orders />,
     },
     {
       name: "Мои рассрочки",
       link: "/profile/kredit",
-      icon: <Payment />,
+      icon: <Orders />,
     },
     {
       name: "Выйти из системы",
       link: "/",
-      icon: <Logout />,
+      icon: <Orders />,
     },
   ];
 
