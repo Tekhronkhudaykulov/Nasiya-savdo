@@ -2,7 +2,7 @@ import { ASSETS } from "../../assets/img/assets";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="wrapper">
       <div className="flex gap-x-[130px]">
         <div>
           <p className="text-[20px] font-[700] text-mainBlack mb-[16px]">

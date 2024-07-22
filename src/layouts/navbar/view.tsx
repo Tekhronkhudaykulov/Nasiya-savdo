@@ -1,5 +1,11 @@
+import { NavbarTop } from "./components";
+
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return (
+    <>
+      <NavbarTop />
+    </>
+  );
 };
 
 export default Navbar;

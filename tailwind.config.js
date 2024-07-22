@@ -12,7 +12,7 @@ export default {
         pink: "#FEF1E6",
         textPink: "#EE7D1E",
         line: "#E2E3E5",
-        secondary: "#F9F9F9",
+        secondary: "#F2F5F7",
         txtSecondary: "#6E6E73",
         txtSecondary2: "#80848F",
         disable: "#E5E5E5",
