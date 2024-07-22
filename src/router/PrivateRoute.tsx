@@ -7,11 +7,11 @@ interface Props {
 
 const PrivateRoute: FC<Props> = ({ child }) => {
   return (
-    <>
+    <div className="wrapper">
       <Navbar />
-      <div className="py-[23px] h-full wrapper">{child}</div>
+      <div className="py-[23px] h-full ">{child}</div>
       <Footer />
-    </>
+    </div>
   );
 };
 
