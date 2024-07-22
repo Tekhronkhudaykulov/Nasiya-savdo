@@ -134,6 +134,36 @@ const Basket = () => {
   );
 };
 
+const RuIcon = () => {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 20 21"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask
+        id="mask0_9302_3025"
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="20"
+        height="21"
+      >
+        <path
+          d="M10 20.5C15.5228 20.5 20 16.0228 20 10.5C20 4.97715 15.5228 0.5 10 0.5C4.47715 0.5 0 4.97715 0 10.5C0 16.0228 4.47715 20.5 10 20.5Z"
+          fill="#F4F5F5"
+        ></path>
+      </mask>
+      <g mask="url(#mask0_9302_3025)">
+        <rect y="0.5" width="20" height="20" fill="white"></rect>
+        <rect y="13.5" width="20" height="7" fill="#E63838"></rect>
+        <rect y="7" width="20" height="7" fill="#3131C4"></rect>
+      </g>
+    </svg>
+  );
+};
 const UserProfile = () => {
   return (
     <svg
@@ -154,6 +184,38 @@ const UserProfile = () => {
   );
 };
 
+const UzIcon = () => {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask
+        id="mask0_9302_12006"
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="20"
+        height="20"
+      >
+        <path
+          d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z"
+          fill="#F4F5F5"
+        ></path>
+      </mask>
+      <g mask="url(#mask0_9302_12006)">
+        <rect width="20" height="20" fill="#0099B5"></rect>
+        <rect y="13" width="20" height="7" fill="#1EB53A"></rect>
+        <rect y="13" width="20" height="1" fill="#CE1126"></rect>
+        <rect y="6" width="20" height="1" fill="#CE1126"></rect>
+        <rect y="6.5" width="20" height="7" fill="white"></rect>
+      </g>
+    </svg>
+  );
+};
 const Ava = () => {
   return (
     <svg
@@ -209,152 +271,4 @@ const Orders = () => {
   );
 };
 
-const Sales = () => {
-  return (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M18 21H6C4.89543 21 4 20.1046 4 19V9C4 7.89543 4.89543 7 6 7H18C19.1046 7 20 7.89543 20 9V19C20 20.1046 19.1046 21 18 21Z"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M8.5 14C8.5 15.933 10.067 17.5 12 17.5C13.933 17.5 15.5 15.933 15.5 14"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M8.5 7V6C8.5 4.067 10.067 2.5 12 2.5V2.5C13.933 2.5 15.5 4.067 15.5 6V7"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  );
-};
-
-const Payment = () => {
-  return (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M6.5 8H5C3.61929 8 2.5 9.11929 2.5 10.5V17.5C2.5 18.8807 3.61929 20 5 20H16C17.3807 20 18.5 18.8807 18.5 17.5V16"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <rect
-        x="6.5"
-        y="3.99999"
-        width="15"
-        height="12"
-        rx="2.5"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M6.5 8L21.5 7.99999"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M12 12H10"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  );
-};
-
-const Logout = () => {
-  return (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M12.0004 4.77513V19.2239C12.0006 19.7635 11.7557 20.2741 11.3348 20.6118C10.9138 20.9495 10.3623 21.0778 9.8355 20.9606L5.38965 19.9722C4.57599 19.7915 3.99707 19.0699 3.99707 18.2365V5.76354C3.99707 4.92975 4.57656 4.208 5.39065 4.02782L9.8365 3.03941C10.363 2.92235 10.9142 3.0506 11.3349 3.38808C11.7556 3.72556 12.0004 4.23577 12.0004 4.77513Z"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M8.99923 13.0204V11.0196"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M20.0031 7.99833V5.95548C20.0032 5.42478 19.7925 4.91578 19.4172 4.54052C19.0419 4.16526 18.5329 3.9545 18.0022 3.95465H15.001"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M20.0031 16.0017V18.0025C20.0032 18.5332 19.7925 19.0422 19.4172 19.4175C19.0419 19.7927 18.5329 20.0035 18.0022 20.0033H15.001"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M15.001 12H20.0031"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M18.0029 14.0008L20.0038 12L18.0029 9.99916"
-        stroke="#212121"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
-  );
-};
-export {
-  Favourite,
-  Scale,
-  Star,
-  Basket,
-  UserProfile,
-  Orders,
-  Sales,
-  Payment,
-  Logout,
-  Ava,
-};
+export { Favourite, Scale, Star, Basket, RuIcon, UzIcon };
