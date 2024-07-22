@@ -7,8 +7,8 @@ import uzcard from "../img/uzcard.png";
 import payme from "../img/payme.png";
 import playMarket from "./Google Play.png";
 import appStore from "./Appstore.png";
-import emptyBasket from "../img/emptyBasket.png";
 import SmallImg from "./Smalimg.png";
+import OrdersEmpty from "./emptyBasket.png";
 
 export const ASSETS = {
   CardImg,
@@ -20,6 +20,6 @@ export const ASSETS = {
   payme,
   playMarket,
   appStore,
-  emptyBasket,
+  OrdersEmpty,
   SmallImg,
 };

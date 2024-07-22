@@ -1,6 +1,7 @@
 import { InputMask } from "@react-input/mask";
 import { ASSETS } from "../../../assets/img/assets";
 import PhoneInput from "react-phone-input-2";
+import { ProfileItem } from "../component/view";
 
 const ProfileAccount = () => {
   return (

@@ -8,7 +8,7 @@ const Footer = () => {
           <p className="text-[20px] font-[700] text-mainBlack mb-[16px]">
             Информация
           </p>
-          <p className="text-gray font-[500] text-[16px]">Lorem</p>
+          <p className="text-gray font-[500] text-[16px] mb-[10px]">Lorem</p>
           <p className="text-gray font-[500] text-[16px]">
             Карьера в Nasiya.uz
           </p>
@@ -17,14 +17,16 @@ const Footer = () => {
           <p className="text-[20px] font-[700] text-mainBlack mb-[16px]">
             Пользователям
           </p>
-          <p className="text-gray font-[500] text-[16px]">Связаться с нами</p>
+          <p className="text-gray font-[500] text-[16px] mb-[10px]">
+            Связаться с нами
+          </p>
           <p className="text-gray font-[500] text-[16px]">Вопрос - Ответ</p>
         </div>
         <div>
           <p className="text-[20px] font-[700] text-mainBlack mb-[16px]">
             Для предпринимателей
           </p>
-          <p className="text-gray font-[500] text-[16px]">
+          <p className="text-gray font-[500] text-[16px] mb-[10px]">
             Продавайте на Nasiya
           </p>
           <p className="text-gray font-[500] text-[16px]">Вход для продавцов</p>
