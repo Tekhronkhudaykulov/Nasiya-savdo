@@ -5,6 +5,10 @@ import visa from "../img/visa.png";
 import master from "./mastercard.png";
 import uzcard from "../img/uzcard.png";
 import payme from "../img/payme.png";
+import playMarket from "./Google Play.png";
+import appStore from "./Appstore.png";
+import emptyBasket from "../img/emptyBasket.png";
+import SmallImg from "./Smalimg.png";
 
 export const ASSETS = {
   CardImg,
@@ -14,4 +18,8 @@ export const ASSETS = {
   master,
   uzcard,
   payme,
+  playMarket,
+  appStore,
+  emptyBasket,
+  SmallImg,
 };
