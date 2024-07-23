@@ -133,6 +133,25 @@ const Basket = () => {
     </svg>
   );
 };
+const SearchIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+      viewBox="0 0 18 18"
+      fill="none"
+    >
+      <path
+        d="M17 17L13.3763 13.3763M1 8.25C1 12.2541 4.24594 15.5 8.25 15.5C12.2541 15.5 15.5 12.2541 15.5 8.25C15.5 4.24594 12.2541 1 8.25 1C4.24606 1.00029 1.00029 4.24606 1 8.25Z"
+        stroke="#027373"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
 
 const RuIcon = () => {
   return (
@@ -198,4 +217,48 @@ const UzIcon = () => {
   );
 };
 
-export { Favourite, Scale, Star, Basket, RuIcon, UzIcon };
+const CategoryIcon = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="4.5" y="10.5" width="3" height="3" rx="1" fill="white" />
+      <rect x="10.5" y="4.5" width="3" height="3" rx="1" fill="white" />
+      <rect x="16.5" y="10.5" width="3" height="3" rx="1" fill="white" />
+      <rect x="4.5" y="4.5" width="3" height="3" rx="1" fill="white" />
+      <rect x="10.5" y="10.5" width="3" height="3" rx="1" fill="white" />
+      <rect x="16.5" y="4.5" width="3" height="3" rx="1" fill="white" />
+      <rect x="4.5" y="16.5" width="3" height="3" rx="1" fill="white" />
+      <rect x="10.5" y="16.5" width="3" height="3" rx="1" fill="white" />
+      <rect x="16.5" y="16.5" width="3" height="3" rx="1" fill="white" />
+    </svg>
+  );
+};
+
+import CloseIcon from "./close.svg";
+import CompareIcon from "./compare.svg";
+import PayIcon from "./pay.svg";
+import BasketIcon from "./basket.svg";
+import FavouriteIcon from "./favourite.svg";
+import UserIcon from "./user.svg";
+
+export {
+  Favourite,
+  Scale,
+  Star,
+  Basket,
+  RuIcon,
+  UzIcon,
+  CategoryIcon,
+  CloseIcon,
+  CompareIcon,
+  PayIcon,
+  BasketIcon,
+  FavouriteIcon,
+  UserIcon,
+  SearchIcon,
+};

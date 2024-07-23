@@ -1,9 +1,11 @@
-import { NavbarTop } from "./components";
+import { NavbarCenter, NavbarTop } from "./components";
+import './navbar.scss'
 
 const Navbar = () => {
   return (
     <>
       <NavbarTop />
+      <NavbarCenter />
     </>
   );
 };

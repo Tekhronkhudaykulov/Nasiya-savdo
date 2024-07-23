@@ -7,7 +7,13 @@ import i18n from "./i18/i18n";
 const App = () => {
   return (
     <I18nextProvider i18n={i18n}>
-      <ConfigProvider>
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: "#027373",
+          },
+        }}
+      >
         <Router />
       </ConfigProvider>
     </I18nextProvider>
