@@ -1,6 +1,13 @@
 import { APP_ROUTES } from ".";
 
-import { Home, Profile, ProfileAccount, ProfileOrders } from "../views";
+import {
+  Home,
+  Profile,
+  ProfileAccount,
+  ProfileCard,
+  ProfileOrders,
+  ProfileSale,
+} from "../views";
 
 export const _routes = [
   {
@@ -25,14 +32,14 @@ export const _routes = [
         path: APP_ROUTES.PROFILE_ORDERS,
         element: ProfileOrders,
       },
-      // {
-      //   path: APP_ROUTES.PROFILE_SALE,
-      //   element: ProfileSale,
-      // },
-      // {
-      //   path: APP_ROUTES.PROFILE_PAYMENT,
-      //   element: ProfilePayment,
-      // },
+      {
+        path: APP_ROUTES.PROFILE_SALE,
+        element: ProfileSale,
+      },
+      {
+        path: APP_ROUTES.PROFILE_PAYMENT,
+        element: ProfileCard,
+      },
     ],
   },
 ];
