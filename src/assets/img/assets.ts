@@ -10,6 +10,7 @@ import playMarket from "./Google Play.png";
 import appStore from "./Appstore.png";
 import SmallImg from "./Smalimg.png";
 import OrdersEmpty from "./emptyBasket.png";
+import Shopping from './shopping.png'
 
 export const ASSETS = {
   CardImg,
@@ -24,4 +25,5 @@ export const ASSETS = {
   appStore,
   OrdersEmpty,
   SmallImg,
+  Shopping
 };

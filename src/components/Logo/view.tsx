@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { ASSETS } from "../../assets/img/assets";
+import { APP_ROUTES } from "../../router";
 
 interface Props {
   className?: string;
@@ -6,9 +8,12 @@ interface Props {
 
 const Logo = ({ className }: Props) => {
   return (
-    <div className={`logo ${className} min-w-[150px] w-[150px] self-center`}>
+    <Link
+      to={APP_ROUTES.HOME}
+      className={`block ${className} min-w-[150px] w-[150px] self-center`}
+    >
       <img src={ASSETS.Logo} className="w-full" alt="" />
-    </div>
+    </Link>
   );
 };
 

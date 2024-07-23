@@ -3,7 +3,7 @@ import { ASSETS } from "../../assets/img/assets";
 const Footer = () => {
   return (
     <div className="wrapper">
-      <div className="flex gap-x-[130px]">
+      <div className="flex gap-x-[130px] mt-[64px]">
         <div>
           <p className="text-[20px] font-[700] text-mainBlack mb-[16px]">
             Информация

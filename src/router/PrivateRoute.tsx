@@ -9,7 +9,7 @@ const PrivateRoute: FC<Props> = ({ child }) => {
   return (
     <>
       <Navbar />
-      <div className="py-[23px] h-full">{child}</div>
+      <div className="h-full">{child}</div>
       <Footer />
     </>
   );
