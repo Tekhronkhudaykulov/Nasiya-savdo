@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router-dom";
 import { Basket, Favourite, Scale, Star } from "../../assets/icon";
 import { ASSETS } from "../../assets/img/assets";
+import { APP_ROUTES } from "../../router";
 
 interface CardType {
   title: string;
@@ -12,6 +14,7 @@ interface CardType {
 }
 
 const Card = () => {
+  const navigate = useNavigate();
   return (
     // <div>
     //   <img className="relative" src={ASSETS.CardImg} alt="" />
@@ -24,7 +27,12 @@ const Card = () => {
     //   </div>
     // </div>
 
-    <div className="max-w-sm mx-auto p-4">
+    <div
+      className="max-w-sm mx-auto p-4"
+      onClick={() =>
+        navigate(`${APP_ROUTES.PROFILE}/${APP_ROUTES.PROFILE_ACCOUNT}`)
+      }
+    >
       <div className="relative  border-gray-200 rounded-lg overflow-hidden shadow-lg">
         {/* Sale Badge */}
         <div className="absolute top-2 left-2 bg-gradient-sale text-[12px] font-[400] text-white px-2 py-1 text-sm rounded-md">

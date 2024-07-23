@@ -183,6 +183,25 @@ const RuIcon = () => {
     </svg>
   );
 };
+const UserProfile = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5 20C5 17.5 7 15.6 9.4 15.6H14.5C17 15.6 18.9 17.6 18.9 20M15 5.2C16.7 6.9 16.7 9.6 15 11.2C13.3 12.8 10.6 12.9 9 11.2C7.4 9.5 7.3 6.8 9 5.2C10.7 3.6 13.3 3.6 15 5.2Z"
+        stroke="white"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
 
 const UzIcon = () => {
   return (
@@ -213,6 +232,60 @@ const UzIcon = () => {
         <rect y="6" width="20" height="1" fill="#CE1126"></rect>
         <rect y="6.5" width="20" height="7" fill="white"></rect>
       </g>
+    </svg>
+  );
+};
+const Ava = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5 20C5 17.5 7 15.6 9.4 15.6H14.5C17 15.6 18.9 17.6 18.9 20M15 5.2C16.7 6.9 16.7 9.6 15 11.2C13.3 12.8 10.6 12.9 9 11.2C7.4 9.5 7.3 6.8 9 5.2C10.7 3.6 13.3 3.6 15 5.2Z"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+const Orders = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M18 21H6C4.89543 21 4 20.1046 4 19V9C4 7.89543 4.89543 7 6 7H18C19.1046 7 20 7.89543 20 9V19C20 20.1046 19.1046 21 18 21Z"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8.5 14C8.5 15.933 10.067 17.5 12 17.5C13.933 17.5 15.5 15.933 15.5 14"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8.5 7V6C8.5 4.067 10.067 2.5 12 2.5V2.5C13.933 2.5 15.5 4.067 15.5 6V7"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
     </svg>
   );
 };
@@ -261,4 +334,7 @@ export {
   FavouriteIcon,
   UserIcon,
   SearchIcon,
+  Orders,
+  Ava,
+  UserProfile,
 };
