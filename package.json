@@ -24,7 +24,8 @@
     "react-lazy-load-image-component": "^1.6.2",
     "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^6.24.1",
-    "react-verification-input": "^4.1.2"
+    "react-verification-input": "^4.1.2",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

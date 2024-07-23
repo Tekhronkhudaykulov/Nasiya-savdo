@@ -1,6 +1,6 @@
 import { Button } from "antd";
 
-const ProfileCardEmpty = ({ img, title }: any) => {
+const ProfileCardEmpty = ({ img, title, onClick }: any) => {
   return (
     <div className="flex items-center justify-center flex-col">
       <img src={img} alt="" />
@@ -12,6 +12,7 @@ const ProfileCardEmpty = ({ img, title }: any) => {
           <Button
             className="!bg-darkGreen    !text-white w-full h-[56px] rounded-[8px] text-[16px] font-[500]"
             type="default"
+            onClick={onClick}
           >
             Добавить карту
           </Button>
