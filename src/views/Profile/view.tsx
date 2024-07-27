@@ -2,7 +2,7 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 
 import "./profile.scss";
 import BreadCrumb from "../../components/breadCump/view";
-import { Ava, Orders } from "../../assets/icon";
+import { Ava, Card, Exit, Orders, Sale } from "../../assets/icon";
 
 const Profile = () => {
   const { pathname } = useLocation();
@@ -20,18 +20,18 @@ const Profile = () => {
     },
     {
       name: "Мои рассрочки",
-      link: "/profile/orders",
-      icon: <Orders />,
+      link: "/profile/profile_sale",
+      icon: <Sale />,
     },
     {
-      name: "Мои рассрочки",
-      link: "/profile/kredit",
-      icon: <Orders />,
+      name: "Мои карты",
+      link: "/profile/profile_card",
+      icon: <Card />,
     },
     {
       name: "Выйти из системы",
       link: "/",
-      icon: <Orders />,
+      icon: <Exit />,
     },
   ];
 

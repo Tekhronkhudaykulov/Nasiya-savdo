@@ -312,6 +312,162 @@ const CategoryIcon = () => {
   );
 };
 
+const Sale = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.375 12L4.125 14.25L1.875 12"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M4.12469 12C4.12469 12.694 4.21069 13.366 4.35969 14.015"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M22.125 12C22.125 7.029 18.096 3 13.125 3C8.154 3 4.125 7.029 4.125 12"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M13.125 21C18.096 21 22.125 16.971 22.125 12"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5.75391 17.155C7.38091 19.478 10.0729 21 13.1249 21"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M16.4957 14.871L12.8438 12.698V7.985"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+const Card = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.5 8H5C3.61929 8 2.5 9.11929 2.5 10.5V17.5C2.5 18.8807 3.61929 20 5 20H16C17.3807 20 18.5 18.8807 18.5 17.5V16"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <rect
+        x="6.5"
+        y="3.99999"
+        width="15"
+        height="12"
+        rx="2.5"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M6.5 8L21.5 7.99999"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M12 12H10"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
+
+const Exit = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M11.9994 4.77513V19.2239C11.9996 19.7635 11.7548 20.2741 11.3338 20.6118C10.9128 20.9495 10.3613 21.0778 9.83453 20.9606L5.38867 19.9722C4.57502 19.7915 3.99609 19.0699 3.99609 18.2365V5.76354C3.99609 4.92975 4.57559 4.208 5.38967 4.02782L9.83553 3.03941C10.362 2.92235 10.9132 3.0506 11.3339 3.38808C11.7547 3.72556 11.9994 4.23577 11.9994 4.77513Z"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8.99826 13.0204V11.0196"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20.0021 7.99833V5.95548C20.0022 5.42478 19.7915 4.91578 19.4162 4.54052C19.041 4.16526 18.5319 3.9545 18.0013 3.95465H15"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M20.0021 16.0017V18.0025C20.0022 18.5332 19.7915 19.0422 19.4162 19.4175C19.041 19.7927 18.5319 20.0035 18.0013 20.0033H15"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M15 12H20.0021"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M18.002 14.0008L20.0028 12L18.002 9.99916"
+        stroke="#212121"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
+};
 import CloseIcon from "./close.svg";
 import CompareIcon from "./compare.svg";
 import PayIcon from "./pay.svg";
@@ -337,4 +493,7 @@ export {
   Orders,
   Ava,
   UserProfile,
+  Sale,
+  Card,
+  Exit,
 };

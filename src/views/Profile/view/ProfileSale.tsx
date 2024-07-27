@@ -1,14 +1,9 @@
 import { Button } from "antd";
-import { ProfileItem, StatusCard } from "../component/view";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ASSETS } from "../../../assets/img/assets";
-import { useState } from "react";
 import OrderEmpty from "../../../empty/OrderEmpty";
+import { useState } from "react";
 
-const ProfileOrders = () => {
+const ProfileSale = () => {
   const [activeTab, setActiveTab] = useState("tab1");
   return (
     <>
@@ -28,7 +23,7 @@ const ProfileOrders = () => {
             } `}
             onClick={() => setActiveTab("tab2")}
           >
-            В процессе
+            Рассрочка и Оплата После Доставки
           </Button>
           <Button
             className={`max-md:px-4 max-md:text-[14px]  ${
@@ -36,7 +31,7 @@ const ProfileOrders = () => {
             } `}
             onClick={() => setActiveTab("tab3")}
           >
-            История заказов
+            Завершенные
           </Button>
         </div>
         {/* {activeTab === "tab1" && (
@@ -259,9 +254,9 @@ const ProfileOrders = () => {
         )} */}
         <div className="flex items-center mt-[20px]  justify-center flex-col bg-[#FFFFFF] py-[40px] rounded-[18px]  border border-[#E2E3E5]">
           <OrderEmpty
-            img={ASSETS.OrdersEmpty}
-            title="Ваши заказы будут отображаться здесь"
-            desc="Чтобы отслеживать статус заказа, нужно его оформить"
+            title="У вас нет рассрочки"
+            desc="Загляните на главную, чтобы выбрать то что по душе"
+            img={ASSETS.Vallet}
           />
         </div>
       </div>
@@ -269,4 +264,4 @@ const ProfileOrders = () => {
   );
 };
 
-export default ProfileOrders;
+export default ProfileSale;
