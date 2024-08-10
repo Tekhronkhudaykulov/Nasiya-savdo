@@ -26,7 +26,7 @@
     "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^6.24.1",
     "react-verification-input": "^4.1.2",
-    "swiper": "^11.1.5",
+    "swiper": "^11.1.8",
     "zustand": "^4.5.4"
   },
   "devDependencies": {

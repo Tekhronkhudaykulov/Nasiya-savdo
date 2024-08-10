@@ -28,7 +28,7 @@ const Card = () => {
     // </div>
 
     <div
-      className="max-w-sm mx-auto p-4"
+      className="max-w-sm mx-auto"
       onClick={() =>
         navigate(`${APP_ROUTES.PROFILE}/${APP_ROUTES.PROFILE_ACCOUNT}`)
       }
@@ -69,7 +69,7 @@ const Card = () => {
             </p>
           </div>
           <div className="flex items-center  mt-[12px] gap-x-[6px]">
-            <button className="text-gray w-full text-[14px] font-[500] bg-buttonBg py-[14px] px-[30px] rounded-[100px]">
+            <button className="text-gray w-full text-[14px] font-[500] bg-buttonBg py-[14px] px-[5px] rounded-[100px]">
               Купить в один клик
             </button>
             <div className="w-[42px] h-[42px] flex items-center justify-center bg-green rounded-[100px]">
