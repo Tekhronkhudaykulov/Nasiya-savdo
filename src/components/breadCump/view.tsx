@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { APP_ROUTES } from "../../router";
+// import { APP_ROUTES } from "../../router";
 
 interface BreadCrumbType {
   items: {
@@ -11,10 +11,10 @@ interface BreadCrumbType {
 
 const BreadCrumb = ({ items, className }: BreadCrumbType) => {
   return (
-    <div className={`wrapper ${className} max-md:hidden`}>
-      <div className="flex items-center cursor-pointer gap-x-[8px]  mb-[36px]">
+    <div className={`${className} max-md:hidden mb-[20px]`}>
+      <div className="flex items-center cursor-pointer gap-x-[8px]">
         <Link
-          to={items.link}
+          to={"/"}
           className="text-[12px] text-txtSecondary py-[5px] px-[8px] bg-buttonBg rounded-[6px] font-[500] flex items-center gap-x-[6px]"
         >
           Главная
@@ -28,9 +28,9 @@ const BreadCrumb = ({ items, className }: BreadCrumbType) => {
             <path
               d="M7.5 12L10.5 9L7.5 6"
               stroke="#80848F"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </Link>
@@ -52,14 +52,17 @@ const BreadCrumb = ({ items, className }: BreadCrumbType) => {
                 <path
                   d="M7.5 12L10.5 9L7.5 6"
                   stroke="#80848F"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </Link>
           ) : (
-            <div className="flex items-center py-[5px] px-[8px] bg-buttonBg rounded-[6px]">
+            <div
+              key={idx}
+              className="flex items-center py-[5px] px-[8px] bg-buttonBg rounded-[6px]"
+            >
               <div className="text-[12px] text-txtSecondary font-[500]">
                 {item.name}
               </div>
@@ -73,9 +76,9 @@ const BreadCrumb = ({ items, className }: BreadCrumbType) => {
                 <path
                   d="M7.5 12L10.5 9L7.5 6"
                   stroke="#80848F"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>

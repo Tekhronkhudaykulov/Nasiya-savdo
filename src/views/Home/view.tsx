@@ -5,13 +5,11 @@ const Home = () => {
   return (
     <>
       <Categories />
-      <div className="wrapper">
-        <Banner />
-        <ProductsSection title="Новинки" products={[...Array(10)]} />
-        <ProductsSection title="Распродажа" products={[...Array(10)]} />
-        <AdvertisingSection />
-        <ProductsSection products={[...Array(10)]} />
-      </div>
+      <Banner />
+      <ProductsSection title="Новинки" products={[...Array(10)]} />
+      <ProductsSection title="Распродажа" products={[...Array(10)]} />
+      <AdvertisingSection />
+      <ProductsSection products={[...Array(10)]} />
     </>
   );
 };

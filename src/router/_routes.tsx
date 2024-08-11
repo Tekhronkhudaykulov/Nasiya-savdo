@@ -2,6 +2,8 @@ import { APP_ROUTES } from ".";
 
 import {
   Home,
+  Basket,
+  Favourite,
   Profile,
   ProfileAccount,
   ProfileCard,
@@ -14,6 +16,14 @@ export const _routes = [
     path: APP_ROUTES.HOME,
     element: Home,
     exact: true,
+  },
+  {
+    path: APP_ROUTES.BASKET,
+    element: Basket,
+  },
+  {
+    path: APP_ROUTES.FAVOURITE,
+    element: Favourite,
   },
   {
     path: APP_ROUTES.PROFILE,

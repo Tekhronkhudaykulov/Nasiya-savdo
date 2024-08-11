@@ -28,7 +28,7 @@ const Categories = () => {
     },
   ];
   return (
-    <div className="wrapper py-[10px]">
+    <div className="py-[10px]">
       <div className="flex items-center gap-3">
         <div className="flex gap-3 overflow-x-auto">
           {list.map((item, idx) => (

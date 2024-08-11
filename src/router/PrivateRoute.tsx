@@ -9,7 +9,7 @@ const PrivateRoute: FC<Props> = ({ child }) => {
   return (
     <>
       <Navbar />
-      <div className="h-full">{child}</div>
+      <div className="h-full wrapper">{child}</div>
       <Footer />
     </>
   );

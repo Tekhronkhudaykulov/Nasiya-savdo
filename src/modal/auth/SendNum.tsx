@@ -1,30 +1,40 @@
 import React, { useState } from "react";
 import { Button, Modal } from "antd";
 import { InputMask } from "@react-input/mask";
-
-const SendNum: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
-
+type SendNumProps = {
+  isNumberModalOpen: boolean;
+  setIsNumberModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsCodeModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
+const SendNum: React.FC<SendNumProps> = ({
+  isNumberModalOpen,
+  setIsNumberModalOpen,
+  setIsCodeModalOpen,
+}: SendNumProps) => {
+  const [phoneNumber, setPhoneNumber] = useState<string>("");
   const handleOk = () => {
-    setIsModalOpen(false);
+    const backendPhoneNumber = phoneNumber.replace(/\D/g, "");
+    if (backendPhoneNumber.length === 12) {
+      localStorage.setItem("phoneNumber", backendPhoneNumber);
+      console.log("Phone Number for Backend:", backendPhoneNumber);
+      setIsNumberModalOpen(false);
+      setIsCodeModalOpen(true);
+    } else {
+      alert("Please enter a valid phone number.");
+    }
   };
 
   const handleCancel = () => {
-    setIsModalOpen(false);
+    setIsNumberModalOpen(false);
   };
 
   return (
     <>
-      <Button type="primary" onClick={showModal}>
+      {/* <Button type="primary" onClick={() => setIsNumberModalOpen(true)}>
         Open Modal
-      </Button>
+      </Button> */}
       <Modal
-        open={isModalOpen}
-        onOk={handleOk}
+        open={isNumberModalOpen}
         onCancel={handleCancel}
         footer={null}
         width={"28%"}
@@ -41,8 +51,11 @@ const SendNum: React.FC = () => {
             mask="+998 (__) ___-__-__"
             replacement={{ _: /\d/ }}
             className="outline-none text-gray mt-[36px] mb-[26px] bg-buttonBg py-[20px] w-full px-[20px] rounded-[8px]"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
           />
           <Button
+            onClick={handleOk}
             className="!bg-darkGreen  !text-white w-full h-[56px] rounded-[8px] text-[16px] font-[500]"
             type="default"
           >
