@@ -23,3 +23,17 @@
   box-shadow: none;
   display: block;
 }
+
+
+.text-hidden-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  /* Adjust based on your font-size */
+  max-height: 3em;
+  /* 2 lines * line-height */
+}

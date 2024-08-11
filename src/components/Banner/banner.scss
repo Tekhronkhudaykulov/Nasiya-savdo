@@ -1,5 +1,4 @@
 .swiper-arrow {
-  
   .swiper-pagination {
     @media (max-width: 640px) {
       display: none;
@@ -13,11 +12,11 @@
     border: 1px solid #76797f4d;
     border-radius: 50%;
     opacity: 0.5;
+    z-index: 1;
     &::after {
       font-size: 20px;
       color: #000;
     }
-    z-index: 1;
     @media (max-width: 640px) {
       display: none;
     }
