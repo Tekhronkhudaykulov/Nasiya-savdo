@@ -1,6 +1,7 @@
 export const APP_ROUTES = {
   HOME: "/",
   BASKET: "/basket",
+  BASKET_FORM: "basket_form",
   FAVOURITE: "/favourite",
   PROFILE: "/profile",
   PROFILE_ACCOUNT: "profile_account",

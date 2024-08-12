@@ -1,15 +1,7 @@
-import BreadCrumb from "../../components/breadCump/view";
-import EmptyBasket from "../../components/EmptyBusket/view";
-import BasketProducts from "./components/BasketProducts";
+import { Outlet } from "react-router-dom";
 
-function Basket() {
-  return (
-    <>
-      <BreadCrumb items={[{ name: "Корзина" }]} />
-      {/* <EmptyBasket /> */}
-      <BasketProducts />
-    </>
-  );
+function BasketOutlet() {
+  return <Outlet />;
 }
 
-export default Basket;
+export default BasketOutlet;

@@ -24,8 +24,12 @@ function BasketSingleCard({
             onChange={onCheckChange(index)}
             checked={isChecked}
           ></Checkbox>
-          <div className="w-[100px] h-[126px] rounded-[6px] overflow-hidden">
-            <img className="h-full object-cover" src={ASSETS.CardImg} alt="" />
+          <div className="w-[100px] h-[126px] bg-[#efefef]">
+            <img
+              className="h-full object-contain rounded-[6px]"
+              src={ASSETS.CardImg}
+              alt=""
+            />
           </div>
           <div className="max-w-[360px] flex flex-col">
             <h2 className="text-mainBlack font-[500] text-[16px] text-hidden-2">

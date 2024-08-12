@@ -37,3 +37,16 @@
   max-height: 3em;
   /* 2 lines * line-height */
 }
+
+.basket_form .ant-select-selector {
+  background: inherit !important;
+  border: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  font-size: inherit !important;
+}
+
+.basket_form .ant-select-open * {
+  color: inherit !important;
+}

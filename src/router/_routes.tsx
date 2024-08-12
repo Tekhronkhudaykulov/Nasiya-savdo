@@ -3,12 +3,14 @@ import { APP_ROUTES } from ".";
 import {
   Home,
   Basket,
+  BasketForm,
   Favourite,
   Profile,
   ProfileAccount,
   ProfileCard,
   ProfileOrders,
   ProfileSale,
+  BasketOutlet,
 } from "../views";
 
 export const _routes = [
@@ -20,6 +22,16 @@ export const _routes = [
   {
     path: APP_ROUTES.BASKET,
     element: Basket,
+  },
+  {
+    path: APP_ROUTES.BASKET,
+    element: BasketOutlet,
+    childs: [
+      {
+        path: APP_ROUTES.BASKET_FORM,
+        element: BasketForm,
+      },
+    ],
   },
   {
     path: APP_ROUTES.FAVOURITE,

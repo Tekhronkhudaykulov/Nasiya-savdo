@@ -37,7 +37,7 @@ const BreadCrumb = ({ items, className }: BreadCrumbType) => {
         {items.map((item, idx) =>
           item.link ? (
             <Link
-              className="text-[12px] bg-buttonBg text-txtSecondary font-[500] py-[5px] px-[8px]  rounded-[6px]"
+              className="text-[12px] flex items-center bg-buttonBg text-txtSecondary font-[500] py-[5px] px-[8px]  rounded-[6px]"
               to={item.link}
               key={idx}
             >

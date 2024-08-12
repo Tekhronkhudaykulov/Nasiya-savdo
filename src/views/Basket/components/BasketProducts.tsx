@@ -3,6 +3,7 @@ import { Checkbox } from "antd";
 import type { CheckboxProps } from "antd";
 import BasketSingleCard from "./BasketSingleCard";
 import { Link } from "react-router-dom";
+import { APP_ROUTES } from "../../../router";
 
 function BasketProducts() {
   const [checkedItems, setCheckedItems] = useState([false, false, false]);
@@ -41,6 +42,7 @@ function BasketProducts() {
           </div>
           {checkedItems.map((isChecked, index) => (
             <BasketSingleCard
+              key={index}
               onCheckChange={onCheckChange}
               isChecked={isChecked}
               index={index}
@@ -76,8 +78,8 @@ function BasketProducts() {
               </span>
             </div>
             <Link
-              className="mt-5 flex justify-center rounded-[8px] text-white bg-darkGreen p-[14px_32px]"
-              to={`/`}
+              className="mt-5 flex justify-center rounded-[8px] text-white bg-[#03a5a5] hover:bg-darkGreen p-[14px_32px]"
+              to={`${APP_ROUTES.BASKET_FORM}`}
             >
               Перейти к оформлению
             </Link>
