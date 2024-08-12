@@ -63,7 +63,8 @@ const Inner = () => {
       {list.map((item, idx) => {
         const displayName =
           item.name === "Войти" && authed ? "Профиль" : item.name;
-        const isActive = currentPath === item.link;
+        const isActive =
+          currentPath.split("/")?.[1] === item.link.split("/")?.[1];
 
         return (
           <Link

@@ -39,7 +39,7 @@ function BasketOrderForm() {
             defaultMask={"(..) ...-..-.."}
             placeholder="+998 (99) 111-22-33"
             alwaysDefaultMask={true}
-            value={"+998990695569"}
+            value={"+998991234567"}
             specialLabel=""
             inputClass="h-[48px] border border-line px-4 text-[16px] rounded-[8px] outline-none"
           />
