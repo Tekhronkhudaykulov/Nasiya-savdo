@@ -38,6 +38,16 @@
   /* 2 lines * line-height */
 }
 
+.text-hidden-7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.7;
+}
+
 .basket_form .ant-select-selector {
   background: inherit !important;
   border: none !important;
@@ -49,4 +59,9 @@
 
 .basket_form .ant-select-open * {
   color: inherit !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none !important;
 }

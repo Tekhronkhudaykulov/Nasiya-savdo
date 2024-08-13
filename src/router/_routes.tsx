@@ -11,6 +11,7 @@ import {
   ProfileOrders,
   ProfileSale,
   BasketOutlet,
+  ProductSingle,
 } from "../views";
 
 export const _routes = [
@@ -18,6 +19,10 @@ export const _routes = [
     path: APP_ROUTES.HOME,
     element: Home,
     exact: true,
+  },
+  {
+    path: APP_ROUTES.PRODUCTSINGLE,
+    element: ProductSingle,
   },
   {
     path: APP_ROUTES.BASKET,

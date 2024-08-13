@@ -561,6 +561,7 @@ import UserIcon from "./user.svg";
 import EmptyOrder from "./ordersEmpty.png";
 import EmptyFavouriteImg from "./favouriteEmpty.png";
 import CategoryOpen from "./CategoryOpen.png";
+import ProductSingleStar from "./productSingleStar.png";
 
 export {
   CategoryOpen,
@@ -588,4 +589,5 @@ export {
   Exit,
   EmptyOrder,
   EmptyFavouriteImg,
+  ProductSingleStar,
 };

@@ -47,11 +47,11 @@ const Card = ({ discount, setIsNumberModalOpen }: CardProps) => {
           {isFavourite ? <Favourited /> : <Favourite />}
         </button>
         {/*  Balance Icon */}
-        <div className="absolute top-10 right-[9px]">
+        <div className="cursor-pointer absolute top-10 right-[9px]">
           <Scale />
         </div>
         {/* Product Image */}
-        <Link to={`/`}>
+        <Link to={`/productSingle`}>
           <img
             className="w-full rounded-[10px]"
             src={ASSETS.CardImg}
@@ -65,7 +65,7 @@ const Card = ({ discount, setIsNumberModalOpen }: CardProps) => {
             <p className="text-gray text-[12px] font-[500]">4.9 (115 оценок)</p>
           </div>
           <Link
-            to={`/`}
+            to={`/productSingle`}
             className="text-mainBlack font-[400] text-[16px] mt-[6px] text-hidden-2"
           >
             Сковорода Kukmara с антипригарным покрыти...
