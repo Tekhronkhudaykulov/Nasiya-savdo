@@ -65,3 +65,13 @@
 .swiper-button-next::after {
   content: none !important;
 }
+
+.aboutProductScroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+.aboutProductScroll::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9;
+  border-radius: 2px;
+}

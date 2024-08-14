@@ -552,6 +552,39 @@ const Exit = () => {
     </svg>
   );
 };
+const Share = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.0012 8.99789H17.0021C18.1071 8.99789 19.0029 9.8937 19.0029 10.9987V19.0021C19.0029 20.1071 18.1071 21.0029 17.0021 21.0029H6.9979C5.89287 21.0029 4.99707 20.1071 4.99707 19.0021V10.9987C4.99707 9.8937 5.89287 8.99789 6.9979 8.99789H8.99874"
+        stroke="#212121"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.0002 15.0011V2.99609"
+        stroke="#212121"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15.0015 5.99734L12.0003 2.99609L8.99902 5.99734"
+        stroke="#212121"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
 import CloseIcon from "./close.svg";
 import CompareIcon from "./compare.svg";
 import PayIcon from "./pay.svg";
@@ -587,6 +620,7 @@ export {
   Sale,
   Card,
   Exit,
+  Share,
   EmptyOrder,
   EmptyFavouriteImg,
   ProductSingleStar,
