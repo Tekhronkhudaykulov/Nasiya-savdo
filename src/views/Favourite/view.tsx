@@ -7,7 +7,11 @@ function Favourite() {
     <>
       <BreadCrumb items={[{ name: "Избранные" }]} />
       {/* <EmptyFavourite /> */}
-      <ProductsSection title="Избранное" products={[...Array(10)]} />
+      <ProductsSection
+        className="mt-[48px]"
+        title="Избранное"
+        products={[...Array(10)]}
+      />
     </>
   );
 }

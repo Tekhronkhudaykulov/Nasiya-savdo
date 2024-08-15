@@ -2,6 +2,7 @@ export const APP_ROUTES = {
   HOME: "/",
   PRODUCTSINGLE: "/productSingle",
   BASKET: "/basket",
+  CATEGORY: "/category",
   BASKET_FORM: "basket_form",
   FAVOURITE: "/favourite",
   PROFILE: "/profile",

@@ -34,6 +34,7 @@ const MultiLevelDropdown = () => {
                   activeArrow={
                     categ.subcategories && categ.subcategories.length > 0
                   }
+                  index={index}
                   active={index === activeCategory}
                   categ={categ}
                 />
@@ -54,6 +55,7 @@ const MultiLevelDropdown = () => {
                     }}
                   >
                     <SubCateg
+                      index={index}
                       activeArrow={
                         subCateg.subcategories &&
                         subCateg.subcategories.length > 0
@@ -78,6 +80,7 @@ const MultiLevelDropdown = () => {
                   onMouseEnter={() => setActiveSubSubCategory(index)}
                 >
                   <SubCateg
+                    index={index}
                     activeArrow={
                       subCateg.subcategories &&
                       subCateg.subcategories.length > 0
@@ -99,7 +102,7 @@ const MultiLevelDropdown = () => {
               ]?.subcategories?.[activeSubSubCategory]?.subcategories?.map(
                 (subCateg, index) => (
                   <div key={index}>
-                    <SubCategLast subCateg={subCateg} />
+                    <SubCategLast index={index} subCateg={subCateg} />
                   </div>
                 )
               )}

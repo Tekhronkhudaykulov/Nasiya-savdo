@@ -12,7 +12,7 @@ function ProductSingle() {
   const [reviewPopUp, setReviewPoUp] = useState(false);
 
   useEffect(() => {
-    if (aboutPopUp||reviewPopUp) {
+    if (aboutPopUp || reviewPopUp) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -33,8 +33,16 @@ function ProductSingle() {
       </div>
       {aboutPopUp && <AboutProductPopUp setAboutPopUp={setAboutPopUp} />}
       {reviewPopUp && <ReviewProductPopUp setReviewPoUp={setReviewPoUp} />}
-      <ProductsSection title="Ещё может подойти" products={[...Array(5)]} />
-      <ProductsSection title="Просмотренные товары" products={[...Array(5)]} />
+      <ProductsSection
+        className="mt-[48px]"
+        title="Ещё может подойти"
+        products={[...Array(5)]}
+      />
+      <ProductsSection
+        className="mt-[48px]"
+        title="Просмотренные товары"
+        products={[...Array(5)]}
+      />
     </>
   );
 }

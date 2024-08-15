@@ -1,6 +1,7 @@
 import { lazy } from "react";
 
 const Home = lazy(() => import("./Home/view"));
+const CategoryPage = lazy(() => import("./Category/view"));
 const ProductSingle = lazy(() => import("./ProductSingle/view"));
 const Basket = lazy(() => import("./Basket/Basket"));
 const BasketOutlet = lazy(() => import("./Basket/view"));
@@ -14,6 +15,7 @@ const ProfileCard = lazy(() => import("./Profile/view/ProfileCard"));
 
 export {
   Home,
+  CategoryPage,
   ProductSingle,
   Basket,
   BasketOutlet,

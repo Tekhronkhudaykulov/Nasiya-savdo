@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { SingleCategoryIcon } from "../../../assets/icon";
 import { FaAngleRight } from "react-icons/fa";
 
@@ -5,13 +6,16 @@ function MainCateg({
   categ,
   active,
   activeArrow,
+  index,
 }: {
   categ: { name: string };
   active: any;
   activeArrow: any;
+  index: any;
 }) {
   return (
-    <div
+    <Link
+      to={`/category?id=${index}`}
       className={`${
         active ? "bg-buttonBg text-mainBlack" : "text-txtSecondary2"
       } flex items-center py-[5px] pr-[10px] pl-1 rounded-[10px] gap-3 cursor-pointer`}
@@ -27,7 +31,7 @@ function MainCateg({
           </span>
         )}
       </div>
-    </div>
+    </Link>
   );
 }
 
