@@ -5,7 +5,13 @@ import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import { ProductSingleStar, Star } from "../../../assets/icon";
 import ColorBox from "./ColorBox";
 import SizeBox from "./SizeBox";
-function SingleProductLeft({ setAboutPopUp }: { setAboutPopUp: any }) {
+function SingleProductLeft({
+  setAboutPopUp,
+  setReviewPoUp,
+}: {
+  setAboutPopUp: any;
+  setReviewPoUp: any;
+}) {
   const data = [
     { location: ASSETS.CardImg },
     { location: ASSETS.CardImg },
@@ -104,7 +110,10 @@ function SingleProductLeft({ setAboutPopUp }: { setAboutPopUp: any }) {
             </div>
           </div>
           <div className="flex">
-            <button className="text-[12px] rounded-[6px] text-[#03a5a5] flex gap-[6px] items-center p-[7px_16px] bg-[rgb(2,115,115,.15)]">
+            <button
+              onClick={() => setReviewPoUp(true)}
+              className="text-[12px] rounded-[6px] text-[#03a5a5] flex gap-[6px] items-center p-[7px_16px] bg-[rgb(2,115,115,.15)]"
+            >
               <img
                 className="w-[16px] h-[16px]"
                 src={ProductSingleStar}

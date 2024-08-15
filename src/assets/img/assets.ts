@@ -14,6 +14,7 @@ import Shopping from "./shopping.png";
 import Vallet from "./Vallet.png";
 import AnorBank from "./anorBank.png";
 import UzumBank from "./uzumBank.png";
+import ProfileImg from "./profilePic.jpg";
 
 export const ASSETS = {
   CardImg,
@@ -32,4 +33,5 @@ export const ASSETS = {
   Vallet,
   AnorBank,
   UzumBank,
+  ProfileImg,
 };
