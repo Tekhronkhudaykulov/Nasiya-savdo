@@ -1,11 +1,27 @@
+import { useEffect, useState } from "react";
 import { NavbarCenter, NavbarTop } from "./components";
-import './navbar.scss'
+import MultiLevelDropdown from "./components/MultiLevelDropdown";
+import "./navbar.scss";
 
 const Navbar = () => {
+  const [activeCateg, setActiveCateg] = useState(false);
+
+  useEffect(() => {
+    if (activeCateg) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [activeCateg]);
+
   return (
     <>
       <NavbarTop />
-      <NavbarCenter />
+      <NavbarCenter setActiveCateg={setActiveCateg} activeCateg={activeCateg} />
+      {activeCateg && <MultiLevelDropdown />}
     </>
   );
 };

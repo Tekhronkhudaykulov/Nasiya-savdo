@@ -108,6 +108,78 @@ const Scale = () => {
     </svg>
   );
 };
+const SingleCategoryIcon = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M27.9999 20V24C27.9999 26.2091 26.2091 28 23.9999 28H21.3333"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4 10.6667V8C4 5.79086 5.79086 4 8 4H9.33333"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M18 8.66666C18 10.1394 19.1939 11.3333 20.6667 11.3333C22.1394 11.3333 23.3333 10.1394 23.3333 8.66666"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.3333 10.6V7.66667C13.3333 5.64162 14.9749 4 16.9999 4H24.3333C26.3583 4 27.9999 5.64162 27.9999 7.66667V13.5333C27.9999 15.5584 26.3583 17.2 24.3333 17.2H21.3333"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <rect
+        x="4"
+        y="14.6667"
+        width="13.3333"
+        height="13.3333"
+        rx="3"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.66553 23.3333L12.6655 19.3333"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.43366 19C8.48883 19.0002 8.53341 19.0451 8.53327 19.1002C8.53313 19.1554 8.48832 19.2001 8.43314 19.2C8.37796 19.1999 8.33327 19.1552 8.33327 19.1C8.33313 19.0734 8.34367 19.0478 8.36254 19.029C8.38141 19.0102 8.40702 18.9997 8.43366 19"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.8997 23.6667C12.8445 23.6664 12.7999 23.6216 12.8001 23.5664C12.8002 23.5112 12.845 23.4666 12.9002 23.4667C12.9554 23.4667 13.0001 23.5115 13.0001 23.5667C13.0002 23.5933 12.9897 23.6189 12.9708 23.6377C12.9519 23.6565 12.9263 23.6669 12.8997 23.6667"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
 
 const Star = () => {
   return (
@@ -624,4 +696,5 @@ export {
   EmptyOrder,
   EmptyFavouriteImg,
   ProductSingleStar,
+  SingleCategoryIcon,
 };

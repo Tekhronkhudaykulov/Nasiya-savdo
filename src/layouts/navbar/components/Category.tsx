@@ -1,20 +1,24 @@
-import { useState } from "react";
 import { CategoryIcon, CategoryOpen } from "../../../assets/icon";
 
-const Category = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Category = ({
+  setActiveCateg,
+  activeCateg,
+}: {
+  setActiveCateg: any;
+  activeCateg: any;
+}) => {
   return (
     <>
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setActiveCateg(!activeCateg)}
         className={`p-[12px_16px] flex items-center gap-[6px] transition duration-200 rounded-[100px] ${
-          isOpen
+          activeCateg
             ? "bg-green text-darkGreen"
             : "bg-darkGreen text-white hover:bg-[#129b9b]"
         }`}
       >
         <span>
-          {isOpen ? (
+          {activeCateg ? (
             <div className="w-[24px] h-[24px]">
               <img src={`${CategoryOpen}`} alt="" />
             </div>
