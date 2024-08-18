@@ -1,9 +1,8 @@
 // @ts-ignore
 import { Swiper, SwiperSlide } from "swiper/react";
 // @ts-ignore
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -14,7 +13,6 @@ import { Image, Skeleton } from "antd";
 const Banner = () => {
   return (
     <Swiper
-      navigation
       className="swiper-arrow rounded-[20px] mt-[10px]"
       loop
       speed={1500}
@@ -23,7 +21,7 @@ const Banner = () => {
         delay: 2500,
         disableOnInteraction: false,
       }}
-      modules={[Navigation, Pagination, Autoplay]}
+      modules={[Pagination, Autoplay]}
       breakpoints={{
         640: {
           slidesPerView: 1,

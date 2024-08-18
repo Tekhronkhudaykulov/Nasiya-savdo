@@ -3,8 +3,8 @@ import { ASSETS } from "../../../assets/img/assets";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import { ProductSingleStar, Star } from "../../../assets/icon";
-import ColorBox from "./ColorBox";
-import SizeBox from "./SizeBox";
+import ColorSelect from "./ColorSelect";
+import SizeSelect from "./SizeSelect";
 function SingleProductLeft({
   setAboutPopUp,
   setReviewPoUp,
@@ -29,6 +29,7 @@ function SingleProductLeft({
       swiperRef?.current?.swiper?.slideTo(slideIndex);
     }
   };
+
   return (
     <div className="flex flex-col gap-[20px]">
       <div className="grid grid-cols-2 gap-[20px]">
@@ -90,24 +91,8 @@ function SingleProductLeft({
             </p>
           </div>
           <div className="flex flex-col gap-[20px]">
-            <div className="flex flex-col gap-2">
-              <p className="text-gray text-[12px] font-[500]">Цвет:</p>
-              <div className="flex flex-wrap gap-[12px]">
-                <ColorBox color={`bg-[#212121]`} />
-                <ColorBox color={`bg-[#bda16a]`} />
-                <ColorBox color={`bg-[#917dac]`} />
-                <ColorBox color={`bg-[#aac5a3]`} />
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <p className="text-gray text-[12px] font-[500]">Размер:</p>
-              <div className="flex flex-wrap gap-[12px]">
-                <SizeBox text="26 см" />
-                <SizeBox text="32 см" />
-                <SizeBox text="40 см" />
-                <SizeBox text="48 см" />
-              </div>
-            </div>
+            <ColorSelect />
+            <SizeSelect />
           </div>
           <div className="flex">
             <button

@@ -1,14 +1,19 @@
 interface Props {
-  color?: string;
+  color: string;
+  active: boolean;
+  onClick: () => void;
 }
-function ColorBox({ color }: Props) {
-  console.log(color);
 
+function ColorBox({ color, active, onClick }: Props) {
   return (
-    <div className="w-[46px] aspect-square cursor-pointer border-[1.5px] p-[2px] border-line rounded-[10px]">
+    <div
+      onClick={onClick}
+      className={`${
+        active ? "border-darkGreen" : "border-line"
+      } w-[46px] aspect-square cursor-pointer border-[1.5px] p-[2px] rounded-[10px]`}
+    >
       <div className={`${color} w-full h-full rounded-[8px]`}></div>
     </div>
   );
 }
-
 export default ColorBox;

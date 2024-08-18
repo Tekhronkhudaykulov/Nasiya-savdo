@@ -12,7 +12,7 @@ import { Image } from "antd";
 const AdvertisingSection = () => {
   return (
     <Swiper
-      className="swiper-arrow rounded-[20px] mt-[48px]"
+      className="swiper-arrow rounded-[20px] my-[48px]"
       loop
       speed={1500}
       autoplay={{
