@@ -45,7 +45,7 @@ const Profile = () => {
             },
           ]}
         />
-        <div className="profileContainer mb-[100px]">
+        <div className="grid grid-cols-[25%_1fr] gap-5 mb-[100px]">
           <div className="border-line border-[1px] rounded-[24px] max-h-[385px] md:p-[24px] p-4">
             <div className="flex items-center mb-[24px]">
               <div className="flex items-center mr-[12px] justify-center w-[60px] h-[60px] rounded-full bg-[#F2F5F7]">
@@ -67,38 +67,6 @@ const Profile = () => {
                 <p>{item.name}</p>
               </Link>
             ))}
-            {/* <div
-              onClick={() => navigate("information")}
-              className="flex items-center gap-x-[12px] h-[50px] pl-[12px] bg-linear rounded-[12px]"
-            >
-              <Users className="[&>path]:stroke-white" />
-              <p className="text-[16px] font-[400] !text-white">Профиль</p>
-            </div>
-            <div
-              onClick={() => navigate("favourites")}
-              className="flex items-center gap-x-[12px] h-[50px] pl-[12px]"
-            >
-              <Favorites />
-              <p className="text-[16px] font-[400]">Избранное</p>
-            </div>
-            <div
-              onClick={() => navigate("orders")}
-              className="flex items-center gap-x-[12px] h-[50px] pl-[12px]"
-            >
-              <Orders />
-              <p className="text-[16px] font-[400]">Заказы</p>
-            </div>
-            <div
-              onClick={() => navigate("kredit")}
-              className="flex items-center gap-x-[12px] h-[50px] pl-[12px]"
-            >
-              <KreditIcon />
-              <p className="text-[16px] font-[400]">Мои рассрочки</p>
-            </div> */}
-            {/* <div className="flex items-center gap-x-[12px] h-[50px] pl-[12px]">
-              <Logout />
-              <p className="text-[16px] font-[400]">Выход</p>
-            </div> */}
           </div>
           <Outlet />
         </div>
