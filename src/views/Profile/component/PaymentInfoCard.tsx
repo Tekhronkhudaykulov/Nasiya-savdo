@@ -4,6 +4,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import { useState } from "react";
 import { PaymentCancel, PaymentDone } from "../../../assets/icon";
+import { Link } from "react-router-dom";
 
 type PaymentStatusProps = "Просрочен" | "Активный" | "Отменен" | "Заверщен";
 
@@ -26,9 +27,12 @@ function PaymentInfoCardHead({ plan }: { plan: InstallmentPlan }) {
   return (
     <div className="flex justify-between items-start">
       <div className="flex flex-col gap-[6px]">
-        <h2 className="text-[20px] font-semibold text-mainBlack leading-[1.2]">
+        <Link
+          to={`/profile/profile_sale_single`}
+          className="text-[20px] font-semibold text-mainBlack leading-[1.2]"
+        >
           Договор #{plan.id}
-        </h2>
+        </Link>
         <span className="text-txtSecondary2 leading-[1.2] text-[14px] font-medium">
           Остаток: 123 000
         </span>
@@ -61,8 +65,9 @@ function PaymentInfoCardStep({ plan }: { plan: InstallmentPlan }) {
         </div>
       </div>
       <div className="flex gap-2">
-        {plan.monthlyPayments.map((month) => (
+        {plan.monthlyPayments.map((month, i) => (
           <div
+            key={i}
             className={`${
               month.status === "paid"
                 ? "bg-[#6CBD6C]"
@@ -183,9 +188,9 @@ function PaymentInfoCard({ plan }: { plan: InstallmentPlan }) {
           >
             <Typography className="w-full">
               <div className="flex justify-between w-full items-center">
-                <h3 className="text-[20px] text-mainBlack font-semibold">
+                <span className="text-[20px] text-mainBlack font-semibold">
                   График платежей
-                </h3>
+                </span>
                 <span> {expanded ? "Свернуть" : "Развернуть"}</span>
               </div>
             </Typography>

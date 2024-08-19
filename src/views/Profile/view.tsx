@@ -55,18 +55,24 @@ const Profile = () => {
                 Новый пользователь
               </p>
             </div>
-            {profileList.map((item, idx) => (
-              <Link
-                key={idx}
-                to={item.link}
-                className={`flex items-center gap-x-[12px] h-[50px] pl-[12px] rounded-[12px] ${
-                  item.link === pathname && "bg-[#027373] active-route"
-                }`}
-              >
-                {item.icon}
-                <p>{item.name}</p>
-              </Link>
-            ))}
+            {profileList.map((item, idx) => {
+              return (
+                <Link
+                  key={idx}
+                  to={item.link}
+                  className={`flex items-center gap-x-[12px] h-[50px] pl-[12px] rounded-[12px] ${
+                    item.link === pathname && "bg-[#027373] active-route"
+                  } ${
+                    item.link === "/profile/profile_sale" &&
+                    pathname == "/profile/profile_sale_single" &&
+                    "bg-[#027373] active-route"
+                  }`}
+                >
+                  {item.icon}
+                  <p>{item.name}</p>
+                </Link>
+              );
+            })}
           </div>
           <Outlet />
         </div>

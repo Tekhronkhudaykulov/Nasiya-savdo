@@ -13,6 +13,7 @@ import {
   BasketOutlet,
   ProductSingle,
   CategoryPage,
+  ProfileSaleSingle,
 } from "../views";
 
 export const _routes = [
@@ -67,6 +68,10 @@ export const _routes = [
       {
         path: APP_ROUTES.PROFILE_SALE,
         element: ProfileSale,
+      },
+      {
+        path: APP_ROUTES.PROFILE_SALE_SINGLE,
+        element: ProfileSaleSingle,
       },
       {
         path: APP_ROUTES.PROFILE_PAYMENT,
