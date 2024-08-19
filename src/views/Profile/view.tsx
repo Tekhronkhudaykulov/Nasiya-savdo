@@ -46,7 +46,7 @@ const Profile = () => {
           ]}
         />
         <div className="grid grid-cols-[25%_1fr] gap-5 mb-[100px]">
-          <div className="border-line border-[1px] rounded-[24px] max-h-[385px] md:p-[24px] p-4">
+          <div className="border-line border-[1px] rounded-[24px] max-h-[385px] md:p-[24px] p-4 sticky top-[90px]">
             <div className="flex items-center mb-[24px]">
               <div className="flex items-center mr-[12px] justify-center w-[60px] h-[60px] rounded-full bg-[#F2F5F7]">
                 <Ava />

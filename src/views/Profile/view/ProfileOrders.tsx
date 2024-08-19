@@ -2,6 +2,8 @@ import { useState } from "react";
 import OrderEmpty from "../../../empty/OrderEmpty";
 import MyOrdersTabs from "../component/MyOrdersTabs";
 import OrderInfoCard from "../component/OrderInfoCard";
+import { EmptyOrder } from "../../../assets/icon";
+
 interface Product {
   name: string;
   quantity: number;
@@ -88,7 +90,11 @@ const ProfileOrders = () => {
           <OrderInfoCard key={index} order={order} />
         ))
       ) : (
-        <OrderEmpty />
+        <OrderEmpty
+          title=" Ваши заказы будут отображаться здесь"
+          texts=" Чтобы отслеживать статус заказа, нужно его оформить"
+          img={EmptyOrder}
+        />
       )}
     </div>
   );

@@ -701,9 +701,9 @@ const DocumentWithShieldBig = () => {
       <path
         d="M6.66552 15V8.33333C6.66552 6.49238 8.15791 5 9.99886 5H31.6655C33.5065 5 34.9989 6.49238 34.9989 8.33333V31.6667C34.9989 33.5076 33.5065 35 31.6655 35H19.9989M28.3322 13.3333H13.3322M28.3324 19.9997H21.6657M28.3322 26.667H24.9989M16.6654 23.8221V28.3991C16.6654 31.4334 13.0636 33.7151 11.152 34.7148C10.4314 35.0949 9.56984 35.0956 8.8487 34.7165C6.93776 33.7172 3.33203 31.4303 3.33203 28.3991V23.8223C3.33867 23.3812 3.68563 23.0206 4.12611 22.9969C5.89749 22.8544 7.59329 22.2175 9.02048 21.1587C9.60063 20.7253 10.3968 20.7253 10.9769 21.1587C12.4041 22.2175 14.0998 22.8544 15.8712 22.9969C16.3092 23.0258 16.6533 23.3833 16.6654 23.8221Z"
         stroke="url(#paint0_linear_2219_27111)"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient
@@ -715,9 +715,67 @@ const DocumentWithShieldBig = () => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#75C6C6" />
-          <stop offset="1" stop-color="#027373" />
+          <stop offset="1" stopColor="#027373" />
         </linearGradient>
       </defs>
+    </svg>
+  );
+};
+const PaymentDone = () => {
+  return (
+    <svg
+      width="25"
+      height="24"
+      viewBox="0 0 25 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20.5 10L13.5 17"
+        stroke="#6CBD6C"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.5 17L4.5 13"
+        stroke="#6CBD6C"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M17.5 7L8.5 17"
+        stroke="#6CBD6C"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+const PaymentCancel = () => {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#FF4D4F" />
+      <path
+        d="M5.53516 5.52295L10.4899 10.4777"
+        stroke="#FF4D4F"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M5.51172 10.4778L10.4664 5.52308"
+        stroke="#FF4D4F"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
     </svg>
   );
 };
@@ -763,4 +821,6 @@ export {
   SingleCategoryIcon,
   DocumentWithShield,
   DocumentWithShieldBig,
+  PaymentDone,
+  PaymentCancel,
 };
