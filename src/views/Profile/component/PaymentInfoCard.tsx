@@ -80,12 +80,18 @@ function PaymentInfoCardStep({ plan }: { plan: InstallmentPlan }) {
 function GraphicCard({
   payment,
   index,
+  length,
 }: {
   payment: MonthlyPayment;
   index: number;
+  length: number;
 }) {
   return (
-    <div className="flex justify-between items-center py-4 border-b border-line">
+    <div
+      className={`flex justify-between items-center py-4 border-line ${
+        index + 1 !== length ? "border-b" : ""
+      }`}
+    >
       <div className="flex flex-col gap-1 text-[14px]">
         <span className="text-txtSecondary2 font-medium leading-[1.1]">
           {index + 1} месяц
@@ -130,6 +136,32 @@ function GraphicCard({
   );
 }
 
+function PaymentButton() {
+  return (
+    <div className="flex items-center gap-[36px] border-t border-line pt-4">
+      <div className="flex flex-col gap-2 text-[14px] max-w-[170px] w-full">
+        <span className="text-txtSecondary2 font-medium leading-[1.1]">
+          К оплате за этот месяц:
+        </span>
+        <span className="text-mainBlack font-medium leading-[1.1]">
+          85 000.35 сум
+        </span>
+      </div>
+      <div className="flex flex-col gap-2 text-[14px] max-w-[170px] w-full">
+        <span className="text-txtSecondary2 font-medium leading-[1.1]">
+          Оплата за весь период:
+        </span>
+        <span className="text-mainBlack font-medium leading-[1.1]">
+          85 000.35 сум
+        </span>
+      </div>
+      <button className="text-[16px] ml-auto max-w-[330px] w-full font-medium p-[14px] bg-darkGreen rounded-[8px] text-white">
+        Оплатить
+      </button>
+    </div>
+  );
+}
+
 function PaymentInfoCard({ plan }: { plan: InstallmentPlan }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -160,12 +192,18 @@ function PaymentInfoCard({ plan }: { plan: InstallmentPlan }) {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              <div className="flex flex-col gap-[32px]">
+              <div className="flex flex-col">
                 {plan.monthlyPayments.map((payment, index) => {
                   return (
-                    <GraphicCard index={index} key={index} payment={payment} />
+                    <GraphicCard
+                      length={plan.monthlyPayments.length}
+                      index={index}
+                      key={index}
+                      payment={payment}
+                    />
                   );
                 })}
+                {plan.status === "Просрочен" && <PaymentButton />}
               </div>
             </Typography>
           </AccordionDetails>
