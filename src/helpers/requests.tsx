@@ -46,13 +46,13 @@ export const requests = {
   productVariants: () => $api.get(`${API_URL}/api/v1/product-variants`),
   productVariantsDetail: (id: number) =>
     $api.get(`${API_URL}/api/v1/product-variants/detail?id=${id}`),
-  productVariantsFilter: (payload: any) =>
+  productVariantsFilter: () =>
     $api.get(
       `${API_URL}/api/v1/product-variants/category-products?id=6&option_values[0]=22`
     ),
-  productVariantsCategoryFilter: (payload: any) =>
+  productVariantsCategoryFilter: () =>
     $api.get(`${API_URL}/api/v1/product-variants/category-filters?id=6`),
-  productVariantsByWith: (payload: any) =>
+  productVariantsByWith: () =>
     $api.get(`${API_URL}/api/v1/product-variants/buy-with?id=1`),
 
   // favourites

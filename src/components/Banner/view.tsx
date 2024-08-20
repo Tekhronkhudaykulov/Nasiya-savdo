@@ -8,7 +8,7 @@ import "swiper/css/scrollbar";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./banner.scss";
 // import { Shimmer } from "react-shimmer";
-import { Image, Skeleton } from "antd";
+import { Image } from "antd";
 
 const Banner = () => {
   return (
