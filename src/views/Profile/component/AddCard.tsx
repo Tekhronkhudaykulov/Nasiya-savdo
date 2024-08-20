@@ -43,9 +43,7 @@ const AddCard = () => {
                   className="border border-line text-[17px] opacity-[70%] rounded-[6px] p-[16px] outline-none font-medium"
                   value={cardNumber}
                   onChange={(e) => setCardNumber(e.target.value)}
-                >
-                  {(inputProps) => <input {...inputProps} type="text" />}
-                </InputMask>
+                ></InputMask>
               </div>
               <div className="flex flex-col gap-3">
                 <label
@@ -60,9 +58,7 @@ const AddCard = () => {
                   className="border border-line w-full font-medium text-[17px] opacity-[70%] rounded-[6px] p-[16px] outline-none"
                   value={cardDate}
                   onChange={(e) => setCardDate(e.target.value)}
-                >
-                  {(inputProps) => <input {...inputProps} type="text" />}
-                </InputMask>
+                ></InputMask>
               </div>
             </div>
             <button
@@ -90,7 +86,7 @@ const AddCard = () => {
           </div>
         </div>
       </Modal>
-      <CardSendCode setOpen={setOpen} open={open} />
+      {open && <CardSendCode setOpen={setOpen} open={open} />}
     </>
   );
 };
