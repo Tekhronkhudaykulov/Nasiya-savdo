@@ -754,6 +754,57 @@ const PaymentDone = () => {
     </svg>
   );
 };
+const TrashCan = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M15.5418 21.0037H8.456C7.27981 21.0037 6.30191 20.0981 6.2117 18.9254L5.24609 6.37256H18.7517L17.7861 18.9254C17.6959 20.0981 16.718 21.0037 15.5418 21.0037V21.0037Z"
+        stroke="#6E6E73"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M20.0028 6.37277H3.99609"
+        stroke="#6E6E73"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9.18602 2.99658H14.8134C15.4349 2.99658 15.9388 3.50047 15.9388 4.12205V6.37299H8.06055V4.12205C8.06055 3.50047 8.56444 2.99658 9.18602 2.99658Z"
+        stroke="#6E6E73"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.969 10.8745V16.5019"
+        stroke="#6E6E73"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10.0295 10.8745V16.5019"
+        stroke="#6E6E73"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
 const PaymentCancel = () => {
   return (
     <svg
@@ -773,6 +824,31 @@ const PaymentCancel = () => {
       <path
         d="M5.51172 10.4778L10.4664 5.52308"
         stroke="#FF4D4F"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+};
+const CloseCircle = () => {
+  return (
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="30" height="30" rx="15" fill="#F2F5F7" />
+      <path
+        d="M10.375 10.3555L19.6651 19.6455"
+        stroke="#80848F"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M10.332 19.646L19.6221 10.3559"
+        stroke="#80848F"
         strokeWidth="1.5"
         strokeLinecap="round"
       />
@@ -823,4 +899,6 @@ export {
   DocumentWithShieldBig,
   PaymentDone,
   PaymentCancel,
+  TrashCan,
+  CloseCircle,
 };

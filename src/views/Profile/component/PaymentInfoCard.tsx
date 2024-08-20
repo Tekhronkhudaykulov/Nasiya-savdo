@@ -5,7 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import { useState } from "react";
 import { PaymentCancel, PaymentDone } from "../../../assets/icon";
 import { Link } from "react-router-dom";
-
+import PayButton from "./PayButton";
 type PaymentStatusProps = "Просрочен" | "Активный" | "Отменен" | "Заверщен";
 
 interface MonthlyPayment {
@@ -143,27 +143,27 @@ function GraphicCard({
 
 function PaymentButton() {
   return (
-    <div className="flex items-center gap-[36px] border-t border-line pt-4">
-      <div className="flex flex-col gap-2 text-[14px] max-w-[170px] w-full">
-        <span className="text-txtSecondary2 font-medium leading-[1.1]">
-          К оплате за этот месяц:
-        </span>
-        <span className="text-mainBlack font-medium leading-[1.1]">
-          85 000.35 сум
-        </span>
+    <>
+      <div className="flex items-center gap-[36px] border-t border-line pt-4">
+        <div className="flex flex-col gap-2 text-[14px] max-w-[170px] w-full">
+          <span className="text-txtSecondary2 font-medium leading-[1.1]">
+            К оплате за этот месяц:
+          </span>
+          <span className="text-mainBlack font-medium leading-[1.1]">
+            85 000.35 сум
+          </span>
+        </div>
+        <div className="flex flex-col gap-2 text-[14px] max-w-[170px] w-full">
+          <span className="text-txtSecondary2 font-medium leading-[1.1]">
+            Оплата за весь период:
+          </span>
+          <span className="text-mainBlack font-medium leading-[1.1]">
+            85 000.35 сум
+          </span>
+        </div>
+        <PayButton />
       </div>
-      <div className="flex flex-col gap-2 text-[14px] max-w-[170px] w-full">
-        <span className="text-txtSecondary2 font-medium leading-[1.1]">
-          Оплата за весь период:
-        </span>
-        <span className="text-mainBlack font-medium leading-[1.1]">
-          85 000.35 сум
-        </span>
-      </div>
-      <button className="text-[16px] ml-auto max-w-[330px] w-full font-medium p-[14px] bg-darkGreen rounded-[8px] text-white">
-        Оплатить
-      </button>
-    </div>
+    </>
   );
 }
 
