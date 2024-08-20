@@ -11,6 +11,7 @@ import { useState } from "react";
 import { PaymentCancel, PaymentDone } from "../../../assets/icon";
 import PaymentStatus from "../component/PaymentStatus";
 import { ASSETS } from "../../../assets/img/assets";
+import PayButton from "../component/PayButton";
 
 type PaymentStatusProps = "Просрочен" | "Активный" | "Отменен" | "Заверщен";
 
@@ -205,9 +206,7 @@ function PaymentButton() {
           85 000.35 сум
         </span>
       </div>
-      <button className="text-[16px] ml-auto max-w-[330px] w-full font-medium p-[14px] bg-darkGreen rounded-[8px] text-white">
-        Оплатить
-      </button>
+      <PayButton />
     </div>
   );
 }
@@ -250,9 +249,7 @@ function PaymentProduct() {
             </p>
           </div>
         </div>
-        <button className="text-[16px] ml-auto max-w-[300px] w-full font-medium p-[14px] bg-darkGreen rounded-[8px] text-white">
-          Оплатить
-        </button>
+        <PayButton />
       </div>
     </div>
   );
