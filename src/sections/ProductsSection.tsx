@@ -28,7 +28,7 @@ const ProductsSection = ({ className, title, products }: Props) => {
           setIsCodeModalOpen={setIsCodeModalOpen}
         />
       )}
-      <div className={`${className} mt-[48px]`}>
+      <div className={`${className}`}>
         {title ? <Title title={title} /> : null}
         <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-x-5 gap-y-[36px]">
           {products?.map((_, idx) => (

@@ -5,7 +5,6 @@
 * {
   padding: 0;
   margin: 0;
-  line-height: 120%;
   font-family: "Inter";
   font-weight: 400;
 }
@@ -38,6 +37,25 @@
   /* 2 lines * line-height */
 }
 
+.text-hidden-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-hidden-7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.7;
+}
+
 .basket_form .ant-select-selector {
   background: inherit !important;
   border: none !important;
@@ -49,4 +67,39 @@
 
 .basket_form .ant-select-open * {
   color: inherit !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none !important;
+}
+
+.aboutProductScroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.categScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.aboutProductScroll::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9;
+  border-radius: 2px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide step arrows for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Optional: Remove border for input fields if needed */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  border: none;
 }

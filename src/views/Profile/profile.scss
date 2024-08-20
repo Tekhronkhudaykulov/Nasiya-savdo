@@ -11,10 +11,10 @@
 
 .profileContainer {
   display: grid;
+  gap: 20px;
   @media (min-width: 1400px) {
     grid-template-columns: 25% 1fr;
   }
-  gap: 20px;
 }
 
 .order-text p {

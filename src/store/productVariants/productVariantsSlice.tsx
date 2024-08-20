@@ -69,10 +69,10 @@ const productVariantsStore = create(
         set({ productVariantsDetailLoading: false });
       }
     },
-    productVariantsFilterRequest: async (payload: any) => {
+    productVariantsFilterRequest: async () => {
       set({ productVariantsFilterLoading: true });
       try {
-        const { data } = await requests.productVariantsFilter(payload);
+        const { data } = await requests.productVariantsFilter();
         set({ productVariantsFilter: data });
         return data;
       } catch (err) {
@@ -81,10 +81,10 @@ const productVariantsStore = create(
         set({ productVariantsFilterLoading: false });
       }
     },
-    productVariantsCategoryFilterRequest: async (payload: any) => {
+    productVariantsCategoryFilterRequest: async () => {
       set({ productVariantByWithLoading: true });
       try {
-        const { data } = await requests.productVariantsByWith(payload);
+        const { data } = await requests.productVariantsByWith();
         set({ productVariantByWithList: data });
         return data;
       } catch (err) {

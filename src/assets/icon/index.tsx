@@ -108,6 +108,78 @@ const Scale = () => {
     </svg>
   );
 };
+const SingleCategoryIcon = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M27.9999 20V24C27.9999 26.2091 26.2091 28 23.9999 28H21.3333"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4 10.6667V8C4 5.79086 5.79086 4 8 4H9.33333"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M18 8.66666C18 10.1394 19.1939 11.3333 20.6667 11.3333C22.1394 11.3333 23.3333 10.1394 23.3333 8.66666"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.3333 10.6V7.66667C13.3333 5.64162 14.9749 4 16.9999 4H24.3333C26.3583 4 27.9999 5.64162 27.9999 7.66667V13.5333C27.9999 15.5584 26.3583 17.2 24.3333 17.2H21.3333"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <rect
+        x="4"
+        y="14.6667"
+        width="13.3333"
+        height="13.3333"
+        rx="3"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.66553 23.3333L12.6655 19.3333"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.43366 19C8.48883 19.0002 8.53341 19.0451 8.53327 19.1002C8.53313 19.1554 8.48832 19.2001 8.43314 19.2C8.37796 19.1999 8.33327 19.1552 8.33327 19.1C8.33313 19.0734 8.34367 19.0478 8.36254 19.029C8.38141 19.0102 8.40702 18.9997 8.43366 19"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.8997 23.6667C12.8445 23.6664 12.7999 23.6216 12.8001 23.5664C12.8002 23.5112 12.845 23.4666 12.9002 23.4667C12.9554 23.4667 13.0001 23.5115 13.0001 23.5667C13.0002 23.5933 12.9897 23.6189 12.9708 23.6377C12.9519 23.6565 12.9263 23.6669 12.8997 23.6667"
+        stroke="#212121"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
 
 const Star = () => {
   return (
@@ -552,6 +624,237 @@ const Exit = () => {
     </svg>
   );
 };
+const Share = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.0012 8.99789H17.0021C18.1071 8.99789 19.0029 9.8937 19.0029 10.9987V19.0021C19.0029 20.1071 18.1071 21.0029 17.0021 21.0029H6.9979C5.89287 21.0029 4.99707 20.1071 4.99707 19.0021V10.9987C4.99707 9.8937 5.89287 8.99789 6.9979 8.99789H8.99874"
+        stroke="#212121"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.0002 15.0011V2.99609"
+        stroke="#212121"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M15.0015 5.99734L12.0003 2.99609L8.99902 5.99734"
+        stroke="#212121"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+const DocumentWithShield = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3.99912 9V5C3.99912 3.89543 4.89455 3 5.99912 3H18.9991C20.1037 3 20.9991 3.89543 20.9991 5V19C20.9991 20.1046 20.1037 21 18.9991 21H11.9991M16.9991 8H7.99912M16.9992 11.9998H12.9992M16.9991 16.0002H14.9991M9.99902 14.2933V17.0394C9.99902 18.86 7.83796 20.2291 6.69102 20.8289C6.25867 21.057 5.74171 21.0573 5.30902 20.8299C4.16246 20.2303 1.99902 18.8582 1.99902 17.0394V14.2934C2.003 14.0287 2.21118 13.8123 2.47547 13.7981C3.5383 13.7127 4.55578 13.3305 5.41209 12.6952C5.76018 12.4352 6.23786 12.4352 6.58594 12.6952C7.44225 13.3305 8.45971 13.7127 9.52252 13.7981C9.78533 13.8155 9.99176 14.03 9.99902 14.2933Z"
+        stroke="url(#paint0_linear_2239_30412)"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_2239_30412"
+          x1="1.99902"
+          y1="3"
+          x2="19.973"
+          y2="21.9724"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#75C6C6" />
+          <stop offset="1" stopColor="#027373" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+const DocumentWithShieldBig = () => {
+  return (
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.66552 15V8.33333C6.66552 6.49238 8.15791 5 9.99886 5H31.6655C33.5065 5 34.9989 6.49238 34.9989 8.33333V31.6667C34.9989 33.5076 33.5065 35 31.6655 35H19.9989M28.3322 13.3333H13.3322M28.3324 19.9997H21.6657M28.3322 26.667H24.9989M16.6654 23.8221V28.3991C16.6654 31.4334 13.0636 33.7151 11.152 34.7148C10.4314 35.0949 9.56984 35.0956 8.8487 34.7165C6.93776 33.7172 3.33203 31.4303 3.33203 28.3991V23.8223C3.33867 23.3812 3.68563 23.0206 4.12611 22.9969C5.89749 22.8544 7.59329 22.2175 9.02048 21.1587C9.60063 20.7253 10.3968 20.7253 10.9769 21.1587C12.4041 22.2175 14.0998 22.8544 15.8712 22.9969C16.3092 23.0258 16.6533 23.3833 16.6654 23.8221Z"
+        stroke="url(#paint0_linear_2219_27111)"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_2219_27111"
+          x1="3.33203"
+          y1="5"
+          x2="33.2886"
+          y2="36.6206"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#75C6C6" />
+          <stop offset="1" stopColor="#027373" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+const PaymentDone = () => {
+  return (
+    <svg
+      width="25"
+      height="24"
+      viewBox="0 0 25 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20.5 10L13.5 17"
+        stroke="#6CBD6C"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.5 17L4.5 13"
+        stroke="#6CBD6C"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M17.5 7L8.5 17"
+        stroke="#6CBD6C"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+const TrashCan = () => {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M15.5418 21.0037H8.456C7.27981 21.0037 6.30191 20.0981 6.2117 18.9254L5.24609 6.37256H18.7517L17.7861 18.9254C17.6959 20.0981 16.718 21.0037 15.5418 21.0037V21.0037Z"
+        stroke="#6E6E73"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M20.0028 6.37277H3.99609"
+        stroke="#6E6E73"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9.18602 2.99658H14.8134C15.4349 2.99658 15.9388 3.50047 15.9388 4.12205V6.37299H8.06055V4.12205C8.06055 3.50047 8.56444 2.99658 9.18602 2.99658Z"
+        stroke="#6E6E73"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.969 10.8745V16.5019"
+        stroke="#6E6E73"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10.0295 10.8745V16.5019"
+        stroke="#6E6E73"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+const PaymentCancel = () => {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#FF4D4F" />
+      <path
+        d="M5.53516 5.52295L10.4899 10.4777"
+        stroke="#FF4D4F"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M5.51172 10.4778L10.4664 5.52308"
+        stroke="#FF4D4F"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+};
+const CloseCircle = () => {
+  return (
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="30" height="30" rx="15" fill="#F2F5F7" />
+      <path
+        d="M10.375 10.3555L19.6651 19.6455"
+        stroke="#80848F"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M10.332 19.646L19.6221 10.3559"
+        stroke="#80848F"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+};
 import CloseIcon from "./close.svg";
 import CompareIcon from "./compare.svg";
 import PayIcon from "./pay.svg";
@@ -561,6 +864,7 @@ import UserIcon from "./user.svg";
 import EmptyOrder from "./ordersEmpty.png";
 import EmptyFavouriteImg from "./favouriteEmpty.png";
 import CategoryOpen from "./CategoryOpen.png";
+import ProductSingleStar from "./productSingleStar.png";
 
 export {
   CategoryOpen,
@@ -586,6 +890,15 @@ export {
   Sale,
   Card,
   Exit,
+  Share,
   EmptyOrder,
   EmptyFavouriteImg,
+  ProductSingleStar,
+  SingleCategoryIcon,
+  DocumentWithShield,
+  DocumentWithShieldBig,
+  PaymentDone,
+  PaymentCancel,
+  TrashCan,
+  CloseCircle,
 };

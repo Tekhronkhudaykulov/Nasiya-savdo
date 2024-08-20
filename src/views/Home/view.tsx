@@ -6,8 +6,16 @@ const Home = () => {
     <>
       <Categories />
       <Banner />
-      <ProductsSection title="Новинки" products={[...Array(10)]} />
-      <ProductsSection title="Распродажа" products={[...Array(10)]} />
+      <ProductsSection
+        className="mt-[48px]"
+        title="Новинки"
+        products={[...Array(10)]}
+      />
+      <ProductsSection
+        className="mt-[48px]"
+        title="Распродажа"
+        products={[...Array(10)]}
+      />
       <AdvertisingSection />
       <ProductsSection products={[...Array(10)]} />
     </>
