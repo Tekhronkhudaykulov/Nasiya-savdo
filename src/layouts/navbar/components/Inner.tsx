@@ -46,58 +46,60 @@ const Inner = () => {
   const currentPath = location.pathname;
 
   return (
-    <div className="flex gap-[22px]">
-      {isNumberModalOpen && (
-        <SendNum
-          setIsCodeModalOpen={setIsCodeModalOpen}
-          isNumberModalOpen={isNumberModalOpen}
-          setIsNumberModalOpen={setIsNumberModalOpen}
-        />
-      )}
-      {isCodeModalOpen && (
-        <SendCode
-          isCodeModalOpen={isCodeModalOpen}
-          setIsCodeModalOpen={setIsCodeModalOpen}
-        />
-      )}
-      {list.map((item, idx) => {
-        const displayName =
-          item.name === "Войти" && authed ? "Профиль" : item.name;
-        const isActive =
-          currentPath.split("/")?.[1] === item.link.split("/")?.[1];
+    <>
+      <div className="flex lg:gap-[22px] gap-[16px] 2md:hidden">
+        {isNumberModalOpen && (
+          <SendNum
+            setIsCodeModalOpen={setIsCodeModalOpen}
+            isNumberModalOpen={isNumberModalOpen}
+            setIsNumberModalOpen={setIsNumberModalOpen}
+          />
+        )}
+        {isCodeModalOpen && (
+          <SendCode
+            isCodeModalOpen={isCodeModalOpen}
+            setIsCodeModalOpen={setIsCodeModalOpen}
+          />
+        )}
+        {list.map((item, idx) => {
+          const displayName =
+            item.name === "Войти" && authed ? "Профиль" : item.name;
+          const isActive =
+            currentPath.split("/")?.[1] === item.link.split("/")?.[1];
 
-        return (
-          <Link
-            onClick={(event) => {
-              if (!authed && item.name === "Войти") {
-                event.preventDefault();
-                setIsNumberModalOpen(true);
-              }
-            }}
-            to={item.link}
-            className={`group text-center flex flex-col items-center justify-center gap-[5px] ${
-              isActive ? "text-darkGreen" : "text-gray"
-            }`}
-            key={idx}
-          >
-            <div
-              className={`flex items-center justify-center w-[27px] h-[27px] flex-shrink-0 p-[3px] rounded-full ${
-                isActive ? "bg-buttonBg" : ""
-              }`}
-            >
-              <img className="w-full h-full" src={item.img} alt={item.name} />
-            </div>
-            <div
-              className={`text-[10px] font-[500] group-hover:text-darkGreen ${
+          return (
+            <Link
+              onClick={(event) => {
+                if (!authed && item.name === "Войти") {
+                  event.preventDefault();
+                  setIsNumberModalOpen(true);
+                }
+              }}
+              to={item.link}
+              className={`group text-center flex flex-col items-center justify-center lg:gap-[5px] gap-[0px] ${
                 isActive ? "text-darkGreen" : "text-gray"
               }`}
+              key={idx}
             >
-              {displayName}
-            </div>
-          </Link>
-        );
-      })}
-    </div>
+              <div
+                className={`flex items-center justify-center lg:w-[27px] lg:h-[27px] w-[24px] h-[24px] flex-shrink-0 p-[3px] rounded-full ${
+                  isActive ? "bg-buttonBg" : ""
+                }`}
+              >
+                <img className="w-full h-full" src={item.img} alt={item.name} />
+              </div>
+              <div
+                className={`text-[10px] font-[500] group-hover:text-darkGreen ${
+                  isActive ? "text-darkGreen" : "text-gray"
+                }`}
+              >
+                {displayName}
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </>
   );
 };
 

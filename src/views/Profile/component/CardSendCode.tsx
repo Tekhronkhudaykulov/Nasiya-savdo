@@ -56,49 +56,51 @@ const CardSendCode: React.FC<SendNumProps> = ({ open, setOpen }) => {
   return (
     <>
       <Modal open={open} onCancel={handleCancel} footer={null} width={"28%"}>
-        <div className="pt-[50px]">
-          <p className="text-[24px] font-[500] text-center">
-            Подтверждение SMS кода
-          </p>
-          <p className="text-[16px] leading-[19px] line-clamp-2 font-[500] mt-[6px] mb-[38px] text-txtSecondary2 text-center">
-            SMS с кодом отправлено на <br /> номер +
-            {maskPhoneNumber(phoneNumber)}
-          </p>
-          <p className="text-[14px] font-[400] mb-[14px] text-txtSecondary2 text-center">
-            Введите код из смс
-          </p>
-          <VerificationInput
-            length={5}
-            value={code}
-            onChange={setCode}
-            classNames={{
-              character: "outline-none bg-buttonBg border-none",
-              characterFilled: "text-gray",
-              container: "flex justify-between w-full mb-[39px]",
-            }}
-          />
+        {open && (
+          <div className="pt-[50px]">
+            <p className="text-[24px] font-[500] text-center">
+              Подтверждение SMS кода
+            </p>
+            <p className="text-[16px] leading-[19px] line-clamp-2 font-[500] mt-[6px] mb-[38px] text-txtSecondary2 text-center">
+              SMS с кодом отправлено на <br /> номер +
+              {maskPhoneNumber(phoneNumber)}
+            </p>
+            <p className="text-[14px] font-[400] mb-[14px] text-txtSecondary2 text-center">
+              Введите код из смс
+            </p>
+            <VerificationInput
+              length={5}
+              value={code}
+              onChange={setCode}
+              classNames={{
+                character: "outline-none bg-buttonBg border-none",
+                characterFilled: "text-gray",
+                container: "flex justify-between w-full mb-[39px]",
+              }}
+            />
 
-          {isResendEnabled ? (
-            <p
-              onClick={handleResendCode}
-              className="text-center cursor-pointer text-[#03A5A5] text-[14px] font-[400] mb-[50px]"
+            {isResendEnabled ? (
+              <p
+                onClick={handleResendCode}
+                className="text-center cursor-pointer text-[#03A5A5] text-[14px] font-[400] mb-[50px]"
+              >
+                Отправить код повторно
+              </p>
+            ) : (
+              <p className="text-center text-mainBlack text-[14px] font-[400] mb-[50px]">
+                {`00:${timer.toString().padStart(2, "0")}`}
+              </p>
+            )}
+            <Button
+              className="!bg-darkGreen !text-white w-full h-[56px] rounded-[8px] text-[16px] font-[500]"
+              type="default"
+              onClick={handleSubmit}
+              disabled={code.length < 5}
             >
-              Отправить код повторно
-            </p>
-          ) : (
-            <p className="text-center text-mainBlack text-[14px] font-[400] mb-[50px]">
-              {`00:${timer.toString().padStart(2, "0")}`}
-            </p>
-          )}
-          <Button
-            className="!bg-darkGreen !text-white w-full h-[56px] rounded-[8px] text-[16px] font-[500]"
-            type="default"
-            onClick={handleSubmit}
-            disabled={code.length < 5}
-          >
-            Подтвердить
-          </Button>
-        </div>
+              Подтвердить
+            </Button>
+          </div>
+        )}
       </Modal>
       <Modal
         open={isSuccess}

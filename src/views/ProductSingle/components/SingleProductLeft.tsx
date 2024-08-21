@@ -32,7 +32,7 @@ function SingleProductLeft({
 
   return (
     <div className="flex flex-col gap-[20px]">
-      <div className="grid grid-cols-2 gap-[20px]">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-[20px]">
         <div className="w-full flex gap-[10px] max-h-[300px] xl:max-h-[470px] lg:max-h-[370px]">
           <Swiper
             className="w-[80px] h-full"
@@ -82,7 +82,7 @@ function SingleProductLeft({
                 4.9( 115 оценок ) Более 400 заказов
               </p>
             </div>
-            <h1 className="text-mainBlack font-[500] text-[24px]">
+            <h1 className="text-mainBlack font-[500] md:text-[24px] text-[16px]">
               Сковорода антипригарная Elegant, с крышкой, гранитное покрытие,
               24, 26, 28 см
             </h1>

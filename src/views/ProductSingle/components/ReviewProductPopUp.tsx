@@ -71,10 +71,12 @@ function ReviewProductPopUp({ setReviewPoUp }: { setReviewPoUp: any }) {
         onClick={() => setReviewPoUp(false)}
         className="bg-[#212121] absolute opacity-[.2] inset-0 w-full h-full"
       ></div>
-      <div className="w-[710px] bg-white absolute overflow-auto aboutProductScroll right-0 h-screen top-0 rounded-[16px_0_0_0] p-[36px]">
+      <div className="lg:w-[710px] md:w-[550px] w-full bg-white absolute overflow-auto aboutProductScroll right-0 h-screen top-0 rounded-[16px_0_0_0] md:p-[36px] p-5">
         <div className="min-h-screen">
           <div className="flex justify-between items-center mb-[6px]">
-            <h2 className="text-[24px] font-medium">Оценки и отзывы</h2>
+            <h2 className="md:text-[24px] text-[20px] font-medium">
+              Оценки и отзывы
+            </h2>
             <button onClick={() => setReviewPoUp(false)}>
               <IoClose className="text-[34px] text-mainBlack" />
             </button>

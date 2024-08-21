@@ -41,13 +41,13 @@ function ReviewComment({ review }: { review: Review }) {
                 )
               )}
             </div>
-            <p className="flex items-center gap-[5px] text-[14px] text-txtSecondary2 font-normal">
+            <p className="flex items-center gap-[5px] md:text-[14px] text-[12px] text-txtSecondary2 font-normal">
               {review.date} <span></span> {review.name}
             </p>
           </div>
         </div>
         <p
-          className={`text-mainBlack text-[14px] leading-[1.5] ${
+          className={`text-mainBlack md:text-[14px] text-[12px] leading-[1.5] ${
             show ? "" : "text-hidden-4"
           }`}
         >

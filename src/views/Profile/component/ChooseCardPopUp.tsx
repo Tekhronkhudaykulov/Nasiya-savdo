@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { CloseCircle, TrashCan } from "../../../assets/icon";
 import { ASSETS } from "../../../assets/img/assets";
 import { useState } from "react";
+import { modalsStore } from "../../../store";
 
 const PlastikCard = ({
   selectedCard,
@@ -47,6 +48,7 @@ const PlastikCard = ({
 
 function ChooseCardPopUp({ setShow }: { setShow: any }) {
   const [selectedCard, setSelectedCard] = useState(0);
+  const { openModal } = modalsStore();
   const [success, setSuccess] = useState(false);
   return (
     <>
@@ -71,6 +73,7 @@ function ChooseCardPopUp({ setShow }: { setShow: any }) {
               </h3>
               <Link
                 to={`/profile/profile_card`}
+                onClick={()=>openModal('card_payment')}
                 className="flex items-center gap-[6px] text-[16px] text-darkGreen font-medium"
               >
                 Добавить карту <FaPlus />

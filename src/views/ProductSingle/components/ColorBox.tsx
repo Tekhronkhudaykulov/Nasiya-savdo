@@ -10,7 +10,7 @@ function ColorBox({ color, active, onClick }: Props) {
       onClick={onClick}
       className={`${
         active ? "border-darkGreen" : "border-line"
-      } w-[46px] aspect-square cursor-pointer border-[1.5px] p-[2px] rounded-[10px]`}
+      } md:w-[46px] w-[40px] aspect-square cursor-pointer border-[1.5px] p-[2px] rounded-[10px]`}
     >
       <div className={`${color} w-full h-full rounded-[8px]`}></div>
     </div>

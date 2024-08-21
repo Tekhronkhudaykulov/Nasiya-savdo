@@ -19,7 +19,7 @@ function ColorSelect() {
   return (
     <div className="flex flex-col gap-2">
       <p className="text-gray text-[12px] font-[500]">Цвет:</p>
-      <div className="flex flex-wrap gap-[12px]">
+      <div className="flex flex-wrap md:gap-[12px] gap-[8px]">
         {colorsDatas.map((data, index) => (
           <ColorBox
             key={index}

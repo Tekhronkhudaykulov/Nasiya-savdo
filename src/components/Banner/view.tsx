@@ -13,10 +13,10 @@ import { Image } from "antd";
 const Banner = () => {
   return (
     <Swiper
-      className="swiper-arrow rounded-[20px] mt-[10px]"
+      className="swiper-arrow md:rounded-[20px] rounded-[10px] mt-[10px]"
       loop
       speed={1500}
-      spaceBetween={25}
+      spaceBetween={10}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,
@@ -25,9 +25,7 @@ const Banner = () => {
       breakpoints={{
         640: {
           slidesPerView: 1,
-        },
-        0: {
-          spaceBetween: 30,
+          spaceBetween: 25,
         },
       }}
     >
@@ -38,9 +36,9 @@ const Banner = () => {
         />
       </SwiperSlide> */}
       <SwiperSlide className="cursor-pointer">
-        <div className="block md:h-[400px] h-[185px]">
+        <div className="block aspect-[2/1] md:aspect-[3.4/1]">
           <Image
-            className="!rounded-[20px] !h-full object-cover"
+            className="md:!rounded-[20px] rounded-[10px] !h-full object-cover"
             src="https://images.uzum.uz/cq1uu8j5qt1gj8ddqckg/main_page_banner.jpg"
             rootClassName="h-full w-full"
           >
@@ -55,9 +53,9 @@ const Banner = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide className="cursor-pointer">
-        <div className="block md:h-[400px] h-[185px]">
+        <div className="block aspect-[2/1] md:aspect-[3.4/1]">
           <Image
-            className="!rounded-[20px] !h-full object-cover"
+            className="md:!rounded-[20px] rounded-[10px] !h-full object-cover"
             src="https://images.uzum.uz/cq1uu8j5qt1gj8ddqckg/main_page_banner.jpg"
             rootClassName="h-full w-full"
           >

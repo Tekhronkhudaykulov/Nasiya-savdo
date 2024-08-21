@@ -7,12 +7,12 @@ const Home = () => {
       <Categories />
       <Banner />
       <ProductsSection
-        className="mt-[48px]"
+        className="md:mt-[48px] mt-[20px]"
         title="Новинки"
         products={[...Array(10)]}
       />
       <ProductsSection
-        className="mt-[48px]"
+        className="md:mt-[48px] mt-[20px]"
         title="Распродажа"
         products={[...Array(10)]}
       />
