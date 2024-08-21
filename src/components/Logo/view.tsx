@@ -10,7 +10,7 @@ const Logo = ({ className }: Props) => {
   return (
     <Link
       to={APP_ROUTES.HOME}
-      className={`block ${className} min-w-[150px] w-[150px] self-center`}
+      className={`block ${className} lg:max-w-[150px] max-w-[140px] w-full self-center`}
     >
       <img src={ASSETS.Logo} className="w-full" alt="" />
     </Link>

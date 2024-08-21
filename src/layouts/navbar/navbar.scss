@@ -6,7 +6,9 @@
   border: 1.5px solid #027373;
   &:hover {
     border-color: #027373 !important;
-    button {
+  }
+  button {
+    &:hover {
       svg {
         path {
           stroke: #fff;
@@ -42,5 +44,27 @@
         transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
       }
     }
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-right: 20px;
+    input {
+      height: 42px;
+      padding-inline: 14px;
+      font-size: 13px !important;
+    }
+    button {
+      height: 100% !important;
+      padding-block: 8px !important;
+      svg {
+        width: 18px;
+      }
+    }
+  }
+  @media screen and (max-width: 940px) {
+    margin-right: 0px;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }

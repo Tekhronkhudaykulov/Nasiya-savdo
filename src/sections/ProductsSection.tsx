@@ -30,7 +30,7 @@ const ProductsSection = ({ className, title, products }: Props) => {
       )}
       <div className={`${className}`}>
         {title ? <Title title={title} /> : null}
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-x-5 gap-y-[36px]">
+        <div className="grid md:grid-cols-[repeat(auto-fill,minmax(250px,1fr))] grid-cols-2 md:gap-x-5 md:gap-y-[36px] gap-x-[8px] gap-y-[20px]">
           {products?.map((_, idx) => (
             <Card setIsNumberModalOpen={setIsNumberModalOpen} key={idx} />
           ))}

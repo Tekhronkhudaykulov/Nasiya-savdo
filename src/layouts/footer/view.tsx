@@ -3,7 +3,7 @@ import { ASSETS } from "../../assets/img/assets";
 const Footer = () => {
   return (
     <div className="wrapper">
-      <div className="flex gap-x-[130px] mt-[64px]">
+      <div className="flex gap-x-[130px] md:flex-row flex-col 2md:gap-x-[80px] gap-y-[24px] mt-[64px]">
         <div>
           <p className="text-[20px] font-[700] text-mainBlack mb-[16px]">
             Информация
@@ -32,29 +32,53 @@ const Footer = () => {
           <p className="text-gray font-[500] text-[16px]">Вход для продавцов</p>
         </div>
       </div>
-      <div className="flex items-center justify-between mt-[60px]">
+      <div className="flex items-center 2md:items-start gap-y-5 2md:flex-col justify-between mt-[60px]">
         <div>
           <p className="text-[20px] font-[700] text-mainBlack mb-[16px]">
             Виды оплаты
           </p>
-          <div className="flex items-center gap-x-[16px]">
-            <div className="max-w-[116px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
-              <img src={ASSETS.uzum} alt="" />
+          <div className="flex items-center flex-wrap gap-y-4 gap-x-[16px]">
+            <div className="w-[90px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
+              <img
+                className="w-full h-[20px] object-contain"
+                src={ASSETS.uzum}
+                alt=""
+              />
             </div>
-            <div className="w-[116px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
-              <img src={ASSETS.payme} alt="" />
+            <div className="w-[90px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
+              <img
+                className="w-full h-[20px] object-contain"
+                src={ASSETS.payme}
+                alt=""
+              />
             </div>
-            <div className="w-[116px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
-              <img src={ASSETS.visa} alt="" />
+            <div className="w-[90px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
+              <img
+                className="w-full h-[20px] object-contain"
+                src={ASSETS.visa}
+                alt=""
+              />
             </div>
-            <div className="w-[116px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
-              <img src={ASSETS.master} alt="" />
+            <div className="w-[90px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
+              <img
+                className="w-full h-[24px] object-contain"
+                src={ASSETS.master}
+                alt=""
+              />
             </div>
-            <div className="w-[116px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
-              <img src={ASSETS.Humo} alt="" />
+            <div className="w-[90px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
+              <img
+                className="w-full h-[26px] object-contain"
+                src={ASSETS.Humo}
+                alt=""
+              />
             </div>
-            <div className="w-[116px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
-              <img src={ASSETS.uzcard} alt="" />
+            <div className="w-[90px] h-[54px] flex items-center justify-center bg-buttonBg rounded-[8px]">
+              <img
+                className="w-full h-[28px] object-contain"
+                src={ASSETS.uzcard}
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -127,7 +151,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border border-line my-[36px]"></div>
-      <div className="flex items-center justify-between mb-[30px]">
+      <div className="flex items-center justify-between 2md:flex-wrap gap-5 mb-[30px]">
         <a className="text-[12px] font-[500] text-mainBlack" href="">
           Соглашение о конфиденциальности
         </a>

@@ -12,7 +12,7 @@ import { Image } from "antd";
 const AdvertisingSection = () => {
   return (
     <Swiper
-      className="swiper-arrow rounded-[20px] my-[48px]"
+      className="swiper-arrow md:rounded-[20px] rounded-[10px] md:my-[48px] my-[20px]"
       loop
       speed={1500}
       autoplay={{
@@ -36,12 +36,6 @@ const AdvertisingSection = () => {
         },
       }}
     >
-      {/* <SwiperSlide>
-        <Skeleton
-          paragraph={{ rows: 0 }}
-          className="md:h-[160px] rounded-[20px] [&>div>h3]:!h-full [&>div>h3]:!w-full [&>div>h3]:!rounded-[20px]"
-        />
-      </SwiperSlide> */}
       <SwiperSlide className="cursor-pointer">
         <div className="block md:h-[160px] rounded-[20px]">
           <Image
