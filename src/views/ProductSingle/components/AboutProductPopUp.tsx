@@ -10,16 +10,16 @@ function AboutProductPopUp({ setAboutPopUp }: { setAboutPopUp: any }) {
         onClick={() => setAboutPopUp(false)}
         className="bg-[#212121] absolute opacity-[.2] inset-0 w-full h-full"
       ></div>
-      <div className="w-[710px] bg-white absolute overflow-auto aboutProductScroll right-0 h-screen top-0 rounded-[16px_0_0_0] p-[36px]">
+      <div className="lg:w-[710px] md:w-[550px] w-full bg-white absolute overflow-auto aboutProductScroll right-0 h-screen top-0 md:rounded-[16px_0_0_0] md:p-[36px] p-[20px]">
         <div className="min-h-screen">
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-[24px] font-medium">О товаре</h2>
+            <h2 className="md:text-[24px] text-[20px] font-medium">О товаре</h2>
             <button onClick={() => setAboutPopUp(false)}>
               <IoClose className="text-[34px] text-mainBlack" />
             </button>
           </div>
           <p
-            className={`text-gray text-[14px] mb-2 leading-[1.5] ${
+            className={`text-gray md:text-[14px] text-[12px] mb-2 leading-[1.5] ${
               show ? "" : "text-hidden-7"
             }`}
           >
@@ -109,7 +109,9 @@ function AboutProductPopUp({ setAboutPopUp }: { setAboutPopUp: any }) {
           </div>
           <div className="mt-[24px]">
             <h3 className="font-medium">Дополнительная информация</h3>
-            <p className={`text-gray text-[14px] mt-4 leading-[1.5] `}>
+            <p
+              className={`text-gray md:text-[14px] text-[12px] mt-4 leading-[1.5] `}
+            >
               Lorem ipsum dolor sit amet consectetur. Aliquam ornare eget hac
               cursus. Pellentesque ullamcorper phasellus placerat pellentesque.
               Adipiscing neque lectus at congue rhoncus tincidunt nisi ac.
@@ -121,10 +123,10 @@ function AboutProductPopUp({ setAboutPopUp }: { setAboutPopUp: any }) {
               lobortis auctor eget sit nunc eu phasellus.
             </p>
             <div className="mt-[22px] flex items-center justify-between">
-              <h2 className="text-[24px] font-semibold text-mainBlack">
+              <h2 className="md:text-[24px] text-[16px] font-semibold text-mainBlack">
                 156 000 сум
               </h2>
-              <button className="p-[18px_36px] text-[16px] font-medium text-white rounded-[6px] bg-darkGreen">
+              <button className="md:p-[18px_36px] md:text-[16px] text-[12px] p-[12px_24px] font-medium text-white rounded-[6px] bg-darkGreen">
                 Добавить в корзину
               </button>
             </div>

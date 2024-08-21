@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { Favourite, Favourited, Scale, Share, Star } from "../../../assets/icon";
+import {
+  Favourite,
+  Favourited,
+  Scale,
+  Share,
+  Star,
+} from "../../../assets/icon";
 import AnorCard from "./AnorCard";
 import UzumCard from "./UzumCard";
 
@@ -10,28 +16,28 @@ function SingleProductRight() {
   const [isFavourite, setIsFavourite] = useState(false);
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center gap-[30px]">
-        <button className="text-mainBlack flex gap-[12px] items-center">
+      <div className="flex items-center 2md:justify-between md:gap-[30px] gap-[12px]">
+        <button className="text-mainBlack flex md:gap-[12px] gap-[8px] items-center">
           <Scale />
-          <span className="text-[14px]">Сравнить</span>
+          <span className="md:text-[14px] text-[10px]">Сравнить</span>
         </button>
-        <button className="text-mainBlack flex gap-[12px] items-center">
+        <button className="text-mainBlack flex md:gap-[12px] gap-[8px] items-center">
           <Share />
-          <span className="text-[14px]">Поделиться</span>
+          <span className="md:text-[14px] text-[10px]">Поделиться</span>
         </button>
         <button
-          className="text-mainBlack flex gap-[12px] items-center"
+          className="text-mainBlack flex md:gap-[12px] gap-[8px] items-center"
           onClick={() => {
             setIsFavourite(!isFavourite);
           }}
         >
           {isFavourite ? <Favourited /> : <Favourite />}
           <button className="absolute top-[11px] right-[11px]"></button>
-          <span className="text-[14px]">В избранное</span>
+          <span className="md:text-[14px] text-[10px]">В избранное</span>
         </button>
       </div>
-      <div className="bg-buttonBg rounded-[16px] p-[20px_16px] flex flex-col gap-5">
-        <h2 className="text-mainBlack text-[24px] font-semibold">
+      <div className="bg-buttonBg rounded-[16px] md:p-[20px_16px] p-[16px] flex flex-col md:gap-5 gap-3">
+        <h2 className="text-mainBlack md:text-[24px] text-[20px] font-semibold">
           156 000 сум
         </h2>
         <div className="flex flex-col gap-2">
@@ -59,10 +65,10 @@ function SingleProductRight() {
           </div>
         </div>
         <div className="flex gap-[8px]">
-          <button className="text-[16px] max-w-[201px] w-full font-medium py-[14px] bg-darkGreen text-white rounded-[8px]">
+          <button className="md:text-[16px] text-[14px] md:max-w-[201px] w-full font-medium md:py-[14px] py-[10px] bg-darkGreen text-white rounded-[8px]">
             Купить сейчас
           </button>
-          <button className="text-[16px] max-w-[201px] w-full font-medium py-[14px] text-darkGreen bg-[rgb(2,115,115,.15)] rounded-[8px]">
+          <button className="md:text-[16px] text-[14px] md:max-w-[201px] w-full font-medium md:py-[14px] py-[10px] text-darkGreen bg-[rgb(2,115,115,.15)] rounded-[8px]">
             В корзину
           </button>
         </div>
