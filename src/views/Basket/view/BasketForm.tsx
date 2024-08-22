@@ -18,7 +18,7 @@ function BasketForm() {
             Оформление заказа
           </h2>
         </div>
-        <div className="grid lg:grid-cols-[2fr,1fr] gap-5">
+        <div className="grid xl:grid-cols-[2fr,1fr] gap-5">
           <BasketFormLeft />
           <BasketOrderSummary />
         </div>
