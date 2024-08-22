@@ -11,11 +11,11 @@ interface BreadCrumbType {
 
 const BreadCrumb = ({ items, className }: BreadCrumbType) => {
   return (
-    <div className={`${className} max-md:hidden mb-[20px]`}>
+    <div className={`${className} 2md:hidden mb-[20px] max-w-max`}>
       <div className="flex items-center cursor-pointer gap-x-[8px]">
         <Link
           to={"/"}
-          className="text-[12px] text-txtSecondary py-[5px] px-[8px] bg-buttonBg rounded-[6px] font-[500] flex items-center gap-x-[6px]"
+          className="md:text-[12px] text-[10px] text-txtSecondary py-[5px] px-[8px] bg-buttonBg rounded-[6px] font-[500] flex items-center md:gap-x-[6px] gap-x-[2px]"
         >
           Главная
           <svg
@@ -37,7 +37,7 @@ const BreadCrumb = ({ items, className }: BreadCrumbType) => {
         {items.map((item, idx) =>
           item.link ? (
             <Link
-              className="text-[12px] flex items-center bg-buttonBg text-txtSecondary font-[500] py-[5px] px-[8px]  rounded-[6px]"
+              className="md:text-[12px] text-[10px] flex items-center bg-buttonBg text-txtSecondary font-[500] py-[5px] px-[8px]  rounded-[6px]"
               to={item.link}
               key={idx}
             >
@@ -63,7 +63,7 @@ const BreadCrumb = ({ items, className }: BreadCrumbType) => {
               key={idx}
               className="flex items-center py-[5px] px-[8px] bg-buttonBg rounded-[6px]"
             >
-              <div className="text-[12px] text-txtSecondary font-[500]">
+              <div className="md:text-[12px] text-[10px] text-txtSecondary font-[500]">
                 {item.name}
               </div>
               <svg

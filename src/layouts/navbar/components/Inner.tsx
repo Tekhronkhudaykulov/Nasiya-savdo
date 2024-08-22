@@ -7,9 +7,6 @@ import {
   UserIcon,
 } from "../../../assets/icon";
 import { APP_ROUTES } from "../../../router";
-import { useState } from "react";
-import SendCode from "./../../../modal/auth/SendCode";
-import SendNum from "../../../modal/auth/SendNum";
 const list = [
   {
     name: "Сравнить",
@@ -38,29 +35,14 @@ const list = [
   },
 ];
 
-const Inner = () => {
+const Inner = ({ setIsNumberModalOpen }: { setIsNumberModalOpen: any }) => {
   const authed = localStorage.getItem("authorised") === "true";
-  const [isNumberModalOpen, setIsNumberModalOpen] = useState(false);
-  const [isCodeModalOpen, setIsCodeModalOpen] = useState(false);
   const location = useLocation();
   const currentPath = location.pathname;
 
   return (
     <>
       <div className="flex lg:gap-[22px] gap-[16px] 2md:hidden">
-        {isNumberModalOpen && (
-          <SendNum
-            setIsCodeModalOpen={setIsCodeModalOpen}
-            isNumberModalOpen={isNumberModalOpen}
-            setIsNumberModalOpen={setIsNumberModalOpen}
-          />
-        )}
-        {isCodeModalOpen && (
-          <SendCode
-            isCodeModalOpen={isCodeModalOpen}
-            setIsCodeModalOpen={setIsCodeModalOpen}
-          />
-        )}
         {list.map((item, idx) => {
           const displayName =
             item.name === "Войти" && authed ? "Профиль" : item.name;

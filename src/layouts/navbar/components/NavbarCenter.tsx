@@ -5,12 +5,14 @@ import { Logo } from "../../../components";
 const NavbarCenter = ({
   setActiveCateg,
   activeCateg,
+  setIsNumberModalOpen,
 }: {
   setActiveCateg: any;
+  setIsNumberModalOpen: any;
   activeCateg: any;
 }) => {
   return (
-    <div className="sticky top-0 left-0 w-full py-[15px] z-[99] bg-white">
+    <div className="sticky top-0 left-0 w-full md:py-[15px] py-[10px] z-[99] bg-white">
       <div className="wrapper">
         <div className="flex justify-between md:justify-start gap-2 md:gap-0">
           <button className="text-[32px] mr-5 text-txtSecondary2 2md:block hidden">
@@ -19,7 +21,7 @@ const NavbarCenter = ({
           <Logo className="lg:mr-[40px] md:mr-[20px]" />
           <Category activeCateg={activeCateg} setActiveCateg={setActiveCateg} />
           <Search />
-          <Inner />
+          <Inner setIsNumberModalOpen={setIsNumberModalOpen} />
         </div>
       </div>
     </div>

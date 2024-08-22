@@ -32,8 +32,8 @@ function SingleProductLeft({
 
   return (
     <div className="flex flex-col gap-[20px]">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-[20px]">
-        <div className="w-full flex gap-[10px] max-h-[300px] xl:max-h-[470px] lg:max-h-[370px]">
+      <div className="grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:grid-cols-1 gap-[20px]">
+        <div className="w-full flex gap-[10px] md:max-h-[370px] max-h-[350px] 2xl:max-h-[470px] xl:max-h-[400px] lg:max-h-[430px]">
           <Swiper
             className="w-[80px] h-full"
             modules={[Navigation, Scrollbar, A11y]}
@@ -74,7 +74,7 @@ function SingleProductLeft({
             ))}
           </Swiper>
         </div>
-        <div className="flex flex-col gap-[24px]">
+        <div className="flex flex-col lg:gap-[24px] gap-[18px]">
           <div className="flex flex-col gap-[12px]">
             <div className="flex items-center gap-x-[4px]">
               <Star />
@@ -82,7 +82,7 @@ function SingleProductLeft({
                 4.9( 115 оценок ) Более 400 заказов
               </p>
             </div>
-            <h1 className="text-mainBlack font-[500] md:text-[24px] text-[16px]">
+            <h1 className="text-mainBlack font-[500] lg:text-[20px] md:text-[18px] text-[16px]">
               Сковорода антипригарная Elegant, с крышкой, гранитное покрытие,
               24, 26, 28 см
             </h1>
@@ -109,7 +109,7 @@ function SingleProductLeft({
           </div>
         </div>
       </div>
-      <div className="border border-line p-[24px] rounded-[16px] flex flex-col gap-[32px] items-start">
+      <div className="border border-line md:p-[24px] p-4 rounded-[16px] flex flex-col gap-[32px] items-start">
         <div className="flex flex-col gap-[8px] items-start">
           <h3 className="text-mainBlack text-[16px] font-semibold">Описание</h3>
           <p
@@ -144,7 +144,7 @@ function SingleProductLeft({
         </div>
         <button
           onClick={() => setAboutPopUp(true)}
-          className="p-[11px_16px] text-[14px] font-medium text-white rounded-[6px] bg-[#03a5a5]"
+          className="md:p-[11px_16px] p-2 text-[14px] font-medium text-white rounded-[6px] bg-[#03a5a5]"
         >
           Все характеристики
         </button>

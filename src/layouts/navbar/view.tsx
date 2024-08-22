@@ -4,7 +4,7 @@ import MultiLevelDropdown from "./components/MultiLevelDropdown";
 import "./navbar.scss";
 import { useLocation } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ setIsNumberModalOpen }: { setIsNumberModalOpen: any }) => {
   const [activeCateg, setActiveCateg] = useState(false);
   const location = useLocation();
   useEffect(() => {
@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <>
       <NavbarTop />
-      <NavbarCenter setActiveCateg={setActiveCateg} activeCateg={activeCateg} />
+      <NavbarCenter setIsNumberModalOpen={setIsNumberModalOpen} setActiveCateg={setActiveCateg} activeCateg={activeCateg} />
       {activeCateg && <MultiLevelDropdown />}
     </>
   );

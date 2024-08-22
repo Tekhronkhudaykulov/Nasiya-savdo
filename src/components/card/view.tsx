@@ -34,7 +34,7 @@ const Card = ({ discount, setIsNumberModalOpen }: CardProps) => {
     <>
       <div className="relative flex flex-col h-full rounded-lg">
         {/* Sale Badge */}
-        <div className="absolute z-10 top-2 left-2 bg-gradient-sale md:text-[12px] text-[10px] font-[400] text-white px-2 py-1 text-sm rounded-md">
+        <div className="absolute z-[1] top-2 left-2 bg-gradient-sale text-[11px] md:text-[12px] font-[400] text-white px-2 py-1 md:rounded-md rounded-[4px]">
           Sale
         </div>
         {/* Heart Icon */}
@@ -72,7 +72,7 @@ const Card = ({ discount, setIsNumberModalOpen }: CardProps) => {
           >
             Сковорода Kukmara с антипригарным покрыти...
           </Link>
-          <div className="flex justify-between items-end mt-1">
+          <div className="flex justify-between gap-1 items-end mt-1">
             <div>
               <p className="text-gray md:min-h-[14px] min-h-[10px] font-[400] text-[10px] line-through mt-[6px]">
                 {discount ? " 260 000 сум" : ""}
@@ -87,7 +87,7 @@ const Card = ({ discount, setIsNumberModalOpen }: CardProps) => {
             {authed && (
               <button
                 onClick={() => setIsBought(!isBought)}
-                className={`w-[42px] cursor-pointer h-[42px] flex-shrink-0 flex items-center justify-center ${
+                className={`md:w-[42px] w-[24px] p-1 cursor-pointer md:h-[42px] h-[24px] flex-shrink-0 flex items-center justify-center ${
                   isBought ? "bg-green" : "bg-secondary"
                 } rounded-[100px]`}
               >
@@ -102,11 +102,11 @@ const Card = ({ discount, setIsNumberModalOpen }: CardProps) => {
               }}
               className="flex items-center mt-[12px] md:gap-x-[11px] gap-x-[6px]"
             >
-              <button className="text-gray w-full md:text-[14px] text-[10px] font-[500] bg-buttonBg md:py-[14px] py-[10px] md:px-[20px] px-[10px] rounded-[100px]">
+              <button className="text-gray md:w-full md:text-[14px] text-[10px] font-[500] bg-buttonBg md:py-[14px] py-[6px] md:px-[20px] px-[8px] md:rounded-[100px] rounded-[6px]">
                 Купить в один клик
               </button>
               <div
-                className={`md:w-[42px] w-[20px] cursor-pointer md:h-[42px] h-[20px] flex-shrink-0 flex items-center justify-center ${
+                className={`md:w-[42px] w-[24px] p-1 cursor-pointer md:h-[42px] h-[24px] flex-shrink-0 flex items-center justify-center ${
                   isBought ? "bg-green" : "bg-secondary"
                 } rounded-[100px]`}
               >

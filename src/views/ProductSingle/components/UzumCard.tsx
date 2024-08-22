@@ -30,7 +30,7 @@ function UzumCard({
         </div>
       </div>
       {active && (
-        <button className="flex justify-center rounded-[8px] text-white bg-[#03a5a5] hover:bg-darkGreen p-[14px_32px]">
+        <button className="flex justify-center rounded-[8px] text-white bg-[#03a5a5] hover:bg-darkGreen md:p-[14px_32px] p-3">
           Оформить
         </button>
       )}

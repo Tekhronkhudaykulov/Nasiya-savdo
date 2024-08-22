@@ -151,7 +151,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border border-line my-[36px]"></div>
-      <div className="flex items-center justify-between 2md:flex-wrap gap-5 mb-[30px]">
+      <div className="flex 2md:pb-[50px] items-center justify-between 2md:flex-wrap gap-5 mb-[30px]">
         <a className="text-[12px] font-[500] text-mainBlack" href="">
           Соглашение о конфиденциальности
         </a>
