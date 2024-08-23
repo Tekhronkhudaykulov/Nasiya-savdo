@@ -24,7 +24,7 @@ function UzumCard({
             src={ASSETS.UzumBank}
             alt="anor bank"
           />
-          <span className="text-mainBlack font-semibold text-[14px]">
+          <span className="text-mainBlack font-semibold md:text-[14px] text-[12px]">
             38 000 сум/мес
           </span>
         </div>

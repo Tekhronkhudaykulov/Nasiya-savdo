@@ -34,7 +34,10 @@ const PlastikCard = ({ plastic }: { plastic: PlasticCard }) => {
           {plastic.cardName}
         </p>
         <div className="w-[42px] h-[25px]">
-          <img className="w-ful h-full object-contain" src={plastic.cardImg} />
+          <img
+            className="w-full h-full object-contain object-right"
+            src={plastic.cardImg}
+          />
         </div>
       </div>
     </div>
@@ -70,17 +73,16 @@ const ProfileCard = () => {
             </div>
           ) : (
             <div className="flex flex-col w-full">
-              <h2 className="text-mainBlack text-[24px] font-semibold">
+              <h2 className="text-mainBlack lg:text-[24px] text-[20px] font-semibold">
                 Мои карты
               </h2>
-              <div className="grid grid-cols-3 mt-5 gap-[20px]">
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] lg:mt-5 mt-4 xl:gap-[20px] gap-4">
                 {plasticCards.map((plastic) => {
                   return <PlastikCard plastic={plastic} />;
                 })}
               </div>
             </div>
           )}
-          ;
         </div>
       </div>
       <AddCard />

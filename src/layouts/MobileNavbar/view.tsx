@@ -12,7 +12,6 @@ function MobileNavbar({ setIsNumberModalOpen }: { setIsNumberModalOpen: any }) {
   const authed = localStorage.getItem("authorised") === "true";
   const location = useLocation();
   const currentPath = location.pathname;
-  console.log(currentPath);
 
   return (
     <div className="fixed bottom-0 left-0 w-full bg-[#fff] z-[2] 2md:flex hidden px-[24px] py-[8px]">
@@ -50,13 +49,17 @@ function MobileNavbar({ setIsNumberModalOpen }: { setIsNumberModalOpen: any }) {
           <span className="w-[24px]">
             <MobileBasketIcon
               className={
-                currentPath == APP_ROUTES.BASKET ? "#027373" : "#80848F"
+                currentPath == APP_ROUTES.BASKET ||
+                currentPath == `${APP_ROUTES.BASKET}/${APP_ROUTES.BASKET_FORM}`
+                  ? "#027373"
+                  : "#80848F"
               }
             />
           </span>
           <span
             className={`${
-              currentPath == APP_ROUTES.BASKET
+              currentPath == APP_ROUTES.BASKET ||
+              currentPath == `${APP_ROUTES.BASKET}/${APP_ROUTES.BASKET_FORM}`
                 ? "text-darkGreen"
                 : "text-txtSecondary2"
             } text-[10px]`}

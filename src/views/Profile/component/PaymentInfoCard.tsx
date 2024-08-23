@@ -29,7 +29,7 @@ function PaymentInfoCardHead({ plan }: { plan: InstallmentPlan }) {
       <div className="flex flex-col gap-[6px]">
         <Link
           to={`/profile/profile_sale_single`}
-          className="text-[20px] font-semibold text-mainBlack leading-[1.2]"
+          className="lg:text-[20px] text-[16px] font-semibold text-mainBlack leading-[1.2]"
         >
           Договор #{plan.id}
         </Link>
@@ -48,7 +48,7 @@ function PaymentInfoCardStep({ plan }: { plan: InstallmentPlan }) {
     (payment) => payment.status === "paid"
   ).length;
   return (
-    <div className="flex flex-col gap-[9px] bg-white p-[16px_20px] rounded-[12px]">
+    <div className="flex flex-col gap-[9px] bg-white lg:p-[16px_20px] p-4 rounded-[12px]">
       <div className="flex items-center gap-[26px]">
         <h2 className="text-[20px] text-darkGreen font-bold">
           {plan.monthlyPayments[0].paymentAmount}
@@ -64,7 +64,7 @@ function PaymentInfoCardStep({ plan }: { plan: InstallmentPlan }) {
           <span className="text-txtSecondary2 font-medium">Оплачено</span>
         </div>
       </div>
-      <div className="flex gap-2">
+      <div className="flex lg:gap-2 gap-1">
         {plan.monthlyPayments.map((month, i) => (
           <div
             key={i}
@@ -175,7 +175,7 @@ function PaymentInfoCard({ plan }: { plan: InstallmentPlan }) {
   };
 
   return (
-    <div className="bg-buttonBg rounded-[16px] p-[20px] flex flex-col gap-5">
+    <div className="bg-buttonBg rounded-[16px] lg:p-[20px] p-4 flex flex-col lg:gap-5 gap-3">
       <PaymentInfoCardHead plan={plan} />
       <PaymentInfoCardStep plan={plan} />
       <div className="rounded-[12px] overflow-hidden">
@@ -188,7 +188,7 @@ function PaymentInfoCard({ plan }: { plan: InstallmentPlan }) {
           >
             <Typography className="w-full">
               <div className="flex justify-between w-full items-center">
-                <span className="text-[20px] text-mainBlack font-semibold">
+                <span className="lg:text-[20px] text-[16px] text-mainBlack font-semibold">
                   График платежей
                 </span>
                 <span> {expanded ? "Свернуть" : "Развернуть"}</span>

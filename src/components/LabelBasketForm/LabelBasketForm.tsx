@@ -4,7 +4,7 @@ interface Props {
 }
 function LabelBasketForm({ className, text }: Props) {
   return (
-    <label className={`${className} text-[14px] text-txtSecondary`} htmlFor="">
+    <label className={`${className} md:text-[14px] text-[12px] text-txtSecondary`} htmlFor="">
       {text}
     </label>
   );

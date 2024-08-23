@@ -734,7 +734,7 @@ const DocumentWithShieldBig = () => {
           y2="36.6206"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#75C6C6" />
+          <stop stopColor="#75C6C6" />
           <stop offset="1" stopColor="#027373" />
         </linearGradient>
       </defs>
