@@ -76,7 +76,7 @@ const Profile = () => {
                 <Link
                   key={idx}
                   to={item.link}
-                  className={`flex items-center gap-x-[12px] h-[50px] pl-[12px] rounded-[12px] ${
+                  className={`flex items-center gap-x-[12px] md:h-[50px] md:text-[16px] text-[14px] h-[40px] pl-[12px] md:rounded-[12px] rounded-[10px] ${
                     item.link === pathname && "bg-[#027373] active-route"
                   } ${
                     item.link === "/profile/profile_sale" &&

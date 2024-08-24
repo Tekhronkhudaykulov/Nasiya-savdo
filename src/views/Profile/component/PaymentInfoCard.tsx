@@ -29,11 +29,11 @@ function PaymentInfoCardHead({ plan }: { plan: InstallmentPlan }) {
       <div className="flex flex-col gap-[6px]">
         <Link
           to={`/profile/profile_sale_single`}
-          className="lg:text-[20px] text-[16px] font-semibold text-mainBlack leading-[1.2]"
+          className="lg:text-[20px] md:text-[16px] text-[14px] font-semibold text-mainBlack leading-[1.2]"
         >
           Договор #{plan.id}
         </Link>
-        <span className="text-txtSecondary2 leading-[1.2] text-[14px] font-medium">
+        <span className="text-txtSecondary2 leading-[1.2] md:text-[14px] text-[12px] font-medium">
           Остаток: 123 000
         </span>
       </div>
@@ -48,17 +48,16 @@ function PaymentInfoCardStep({ plan }: { plan: InstallmentPlan }) {
     (payment) => payment.status === "paid"
   ).length;
   return (
-    <div className="flex flex-col gap-[9px] bg-white lg:p-[16px_20px] p-4 rounded-[12px]">
-      <div className="flex items-center gap-[26px]">
-        <h2 className="text-[20px] text-darkGreen font-bold">
+    <div className="flex flex-col gap-[9px] bg-white lg:p-[16px_20px] p-[12px_10px] md:rounded-[12px] rounded-[8px]">
+      <div className="flex items-center flex-wrap md:gap-[26px] gap-3">
+        <h2 className="md:text-[20px] text-[18px] text-darkGreen font-bold">
           {plan.monthlyPayments[0].paymentAmount}
         </h2>
-        <span className="text-[14px] font-medium text-txtSecondary2">
+        <span className="md:text-[14px] text-[12px] order-2 md:order-[0] font-medium text-txtSecondary2">
           Следующая оплата: {plan.monthlyPayments[0].paymentDate}
         </span>
-        <div className="flex text-[14px] items-center gap-[4px] ml-auto">
+        <div className="flex md:text-[14px] text-[12px] items-center gap-[4px] ml-auto">
           <span className="text-mainBlack font-medium">
-            {" "}
             {paidPayments}/{totalPayments}
           </span>
           <span className="text-txtSecondary2 font-medium">Оплачено</span>
@@ -74,7 +73,7 @@ function PaymentInfoCardStep({ plan }: { plan: InstallmentPlan }) {
                 : month.status === "overdue"
                 ? "bg-[#FF4D4F]"
                 : "bg-[#E2E3E5]"
-            } flex-grow rounded-[4px] h-[10px]`}
+            } flex-grow rounded-[4px] md:h-[10px] h-[6px]`}
           ></div>
         ))}
       </div>
@@ -93,7 +92,7 @@ function GraphicCard({
 }) {
   return (
     <div
-      className={`flex justify-between items-center py-4 border-line ${
+      className={`flex justify-between flex-wrap gap-3 items-center md:py-4 py-3 border-line ${
         index + 1 !== length ? "border-b" : ""
       }`}
     >
@@ -120,9 +119,9 @@ function GraphicCard({
             : payment.status === "overdue"
             ? "bg-[#FFEEEE] text-[#FF4D4F]"
             : "bg-[#E2E3E5] text-txtSecondary2"
-        } p-[8px_16px] rounded-[4px] min-w-[135px] flex items-center justify-center gap-[10px]`}
+        } md:p-[8px_16px] p-[6px_12px] rounded-[4px] min-w-[135px] flex items-center justify-center gap-[10px]`}
       >
-        <span>
+        <span className="text-[14px] md:text-[16px]">
           {payment.status === "paid"
             ? "Оплачен"
             : payment.status === "overdue"
@@ -144,8 +143,8 @@ function GraphicCard({
 function PaymentButton() {
   return (
     <>
-      <div className="flex items-center gap-[36px] border-t border-line pt-4">
-        <div className="flex flex-col gap-2 text-[14px] max-w-[170px] w-full">
+      <div className="flex items-center flex-wrap md:gap-[36px] gap-[24px] border-t border-line pt-4">
+        <div className="flex flex-col gap-2 md:text-[14px] text-[12px] max-w-[170px] w-full">
           <span className="text-txtSecondary2 font-medium leading-[1.1]">
             К оплате за этот месяц:
           </span>
@@ -153,7 +152,7 @@ function PaymentButton() {
             85 000.35 сум
           </span>
         </div>
-        <div className="flex flex-col gap-2 text-[14px] max-w-[170px] w-full">
+        <div className="flex flex-col gap-2 md:text-[14px] text-[12px] max-w-[170px] w-full">
           <span className="text-txtSecondary2 font-medium leading-[1.1]">
             Оплата за весь период:
           </span>
@@ -175,10 +174,10 @@ function PaymentInfoCard({ plan }: { plan: InstallmentPlan }) {
   };
 
   return (
-    <div className="bg-buttonBg rounded-[16px] lg:p-[20px] p-4 flex flex-col lg:gap-5 gap-3">
+    <div className="bg-buttonBg md:rounded-[16px] rounded-[10px] lg:p-[20px] p-3 flex flex-col lg:gap-5 gap-3">
       <PaymentInfoCardHead plan={plan} />
       <PaymentInfoCardStep plan={plan} />
-      <div className="rounded-[12px] overflow-hidden">
+      <div className="md:rounded-[12px] rounded-[8px] overflow-hidden">
         <Accordion expanded={expanded} onChange={handleChange}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -188,10 +187,13 @@ function PaymentInfoCard({ plan }: { plan: InstallmentPlan }) {
           >
             <Typography className="w-full">
               <div className="flex justify-between w-full items-center">
-                <span className="lg:text-[20px] text-[16px] text-mainBlack font-semibold">
+                <span className="md:text-[20px] text-[14px] text-mainBlack font-semibold">
                   График платежей
                 </span>
-                <span> {expanded ? "Свернуть" : "Развернуть"}</span>
+                <span className="text-[13px] md:text-[16px]">
+                  {" "}
+                  {expanded ? "Свернуть" : "Развернуть"}
+                </span>
               </div>
             </Typography>
           </AccordionSummary>

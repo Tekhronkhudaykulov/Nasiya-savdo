@@ -28,15 +28,15 @@ function MobileNavbar({ setIsNumberModalOpen }: { setIsNumberModalOpen: any }) {
             Главная
           </span>
         </Link>
-        <Link to={`/`} className="flex flex-col gap-[5px] items-center">
+        <Link to={`/category`} className="flex flex-col gap-[5px] items-center">
           <span className="w-[24px]">
             <MobileSearchIcon
-              className={currentPath == "" ? "#027373" : "#80848F"}
+              className={currentPath == "/category" ? "#027373" : "#80848F"}
             />
           </span>
           <span
             className={`${
-              currentPath == "" ? "text-darkGreen" : "text-txtSecondary2"
+              currentPath == "/category" ? "text-darkGreen" : "text-txtSecondary2"
             } text-[10px]`}
           >
             Каталог

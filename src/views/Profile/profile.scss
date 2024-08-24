@@ -48,7 +48,10 @@
   background-color: #027373;
   color: white;
 }
-
+.active-orders-button:hover {
+  color: white !important;
+  background-color: #027373 !important;
+}
 .default {
   color: #212121;
   background: #f2f5f7;

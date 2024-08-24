@@ -18,7 +18,7 @@ const MultiLevelDropdown = () => {
   return (
     <div className="dropdown-container fixed top-0 h-screen overflow-auto z-[20] bg-[#fff] w-full py-4">
       <div className="wrapper flex h-full">
-        <div className="grid lg:grid-cols-4 w-full pt-[100px] h-full gap-5">
+        <div className="grid grid-cols-4 w-full pt-[100px] h-full gap-5">
           {/* Main Categories */}
           <div className="flex flex-col">
             {CategoriesDatas?.map((categ, index) => (

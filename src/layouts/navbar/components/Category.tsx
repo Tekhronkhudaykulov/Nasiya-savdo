@@ -11,7 +11,7 @@ const Category = ({
     <>
       <button
         onClick={() => setActiveCateg(!activeCateg)}
-        className={`lg:p-[12px_16px] md:p-[10px_16px] p-[6px_10px] hidden md:flex items-center lg:gap-[6px] gap-[4px] transition duration-200 rounded-[100px] ${
+        className={`lg:p-[12px_16px] md:p-[10px_16px] p-[6px_10px] flex 2md:hidden items-center lg:gap-[6px] gap-[4px] transition duration-200 rounded-[100px] ${
           activeCateg
             ? "bg-green text-darkGreen"
             : "bg-darkGreen text-white hover:bg-[#129b9b]"
@@ -28,7 +28,9 @@ const Category = ({
             </div>
           )}
         </span>
-        <span className="lg:text-[16px] md:text-[15px] text-[12px]">Категории</span>
+        <span className="lg:text-[16px] md:text-[15px] text-[12px]">
+          Категории
+        </span>
       </button>
     </>
   );

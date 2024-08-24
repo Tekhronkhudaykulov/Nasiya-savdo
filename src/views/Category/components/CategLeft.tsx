@@ -5,7 +5,7 @@ import CategBrand from "./CategBrend";
 
 function CategLeft() {
   return (
-    <div className="border border-line h-max rounded-[12px] p-4 flex flex-col gap-[24px]">
+    <div className="border border-line 2md:hidden h-max rounded-[12px] p-4 flex flex-col gap-[24px]">
       <CategLists />
       <CategPriceForm />
       <CategColor />

@@ -62,8 +62,8 @@ const ProfileCard = () => {
   return (
     <>
       <div>
-        <div className="flex items-center p-[20px] justify-center flex-col bg-[#FFFFFF] py-[24px] rounded-[18px]  border border-[#E2E3E5]">
-          {plasticCards.length === 0 ? (
+        <div className="flex items-center md:p-[20px] p-4 justify-center flex-col bg-[#FFFFFF] md:py-[24px] py-5 md:rounded-[18px] rounded-[14px]  border border-[#E2E3E5]">
+          {plasticCards.length !== 0 ? (
             <div className="my-8">
               <ProfileCardEmpty
                 title="Вы еше не добавили карту"
@@ -77,8 +77,8 @@ const ProfileCard = () => {
                 Мои карты
               </h2>
               <div className="grid grid-cols-[repeat(auto-fit,minmax(270px,1fr))] lg:mt-5 mt-4 xl:gap-[20px] gap-4">
-                {plasticCards.map((plastic) => {
-                  return <PlastikCard plastic={plastic} />;
+                {plasticCards.map((plastic, i) => {
+                  return <PlastikCard key={i} plastic={plastic} />;
                 })}
               </div>
             </div>

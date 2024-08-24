@@ -36,9 +36,9 @@ function PaginationComp({
     });
   }, [page]);
   return (
-    <div className="md:mt-[80px] mt-[40px] flex items-center justify-center gap-2">
+    <div className="md:mt-[80px] mt-[20px] flex items-center justify-center gap-2">
       <Pagination
-        className="gap-x-6 rounded-[6px] bg-white"
+        className="md:gap-x-6 gap-x-2 rounded-[6px] bg-white"
         current={current}
         showQuickJumper={false}
         defaultPageSize={limit || 12}
@@ -76,7 +76,7 @@ function PaginationComp({
                     strokeLinecap="round"
                   />
                 </svg>
-                назад
+                <span className="md:block hidden">назад</span>
               </button>
             );
           }
@@ -89,7 +89,7 @@ function PaginationComp({
                 }}
                 className="hover:bg-gray-200 ml-[10px] rounded-lg bg-white font-[inter] text-[12px] text-sm font-medium capitalize md:ml-[22px] md:text-sm"
               >
-                вперёд
+                <span className="md:block hidden">вперёд</span>
                 <svg
                   className="relative -top-[1px] ml-3 inline-flex"
                   width="7.001953"
