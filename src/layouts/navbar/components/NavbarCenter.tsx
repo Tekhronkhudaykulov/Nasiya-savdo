@@ -26,7 +26,9 @@ const NavbarCenter = ({
           </button>
           <Logo className="lg:mr-[40px] md:mr-[20px]" />
           <Category activeCateg={activeCateg} setActiveCateg={setActiveCateg} />
-          <Search />
+          <div className="w-full ml-4 mr-6 relative md:flex hidden">
+            <Search />
+          </div>
           <Inner setIsNumberModalOpen={setIsNumberModalOpen} />
           {show && <MobileHeader setShow={setShow} />}
         </div>

@@ -1,9 +1,8 @@
 .nav-search {
-  margin-left: 16px;
-  margin-right: 40px;
   display: flex;
   border-radius: 24px;
   border: 1.5px solid #027373;
+  padding-left: 8px;
   &:hover {
     border-color: #027373 !important;
   }
@@ -63,8 +62,5 @@
   }
   @media screen and (max-width: 940px) {
     margin-right: 0px;
-  }
-  @media screen and (max-width: 767px) {
-    display: none;
   }
 }
