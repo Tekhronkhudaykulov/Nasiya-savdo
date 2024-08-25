@@ -161,7 +161,7 @@ function ChooseCardPopUp({ setShow }: { setShow: any }) {
             <div className="flex gap-4 flex-col md:text-[16px] text-[14px] md:flex-row text-center">
               <Link
                 className="py-[14px] md:max-w-[200px] w-full rounded-[8px] bg-darkGreen text-white"
-                to={``}
+                to={`/category`}
               >
                 Перейти в каталог
               </Link>

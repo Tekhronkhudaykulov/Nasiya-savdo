@@ -63,7 +63,7 @@ const ProfileCard = () => {
     <>
       <div>
         <div className="flex items-center md:p-[20px] p-4 justify-center flex-col bg-[#FFFFFF] md:py-[24px] py-5 md:rounded-[18px] rounded-[14px]  border border-[#E2E3E5]">
-          {plasticCards.length !== 0 ? (
+          {plasticCards.length === 0 ? (
             <div className="my-8">
               <ProfileCardEmpty
                 title="Вы еше не добавили карту"
