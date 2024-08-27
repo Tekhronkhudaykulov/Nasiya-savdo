@@ -9,6 +9,7 @@ import {
 } from "../../assets/icon";
 import { ASSETS } from "../../assets/img/assets";
 import { useState } from "react";
+import { APP_ROUTES } from "../../router";
 
 // interface CardType {
 //   title: string;
@@ -47,9 +48,12 @@ const Card = ({ discount, setIsNumberModalOpen }: CardProps) => {
           {isFavourite ? <Favourited /> : <Favourite />}
         </button>
         {/*  Balance Icon */}
-        <div className="cursor-pointer absolute top-10 right-[9px]">
+        <Link
+          to={`${APP_ROUTES.COMPARE}`}
+          className="cursor-pointer absolute top-10 right-[9px]"
+        >
           <Scale />
-        </div>
+        </Link>
         {/* Product Image */}
         <Link to={`/productSingle`}>
           <img

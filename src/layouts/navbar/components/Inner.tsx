@@ -11,7 +11,7 @@ const list = [
   {
     name: "Сравнить",
     img: CompareIcon,
-    link: "",
+    link: `${APP_ROUTES.COMPARE}`,
   },
   {
     name: "Оплатить",

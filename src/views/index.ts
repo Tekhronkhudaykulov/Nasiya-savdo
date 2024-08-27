@@ -12,6 +12,7 @@ const Profile = lazy(() => import("./Profile/view"));
 const ProfileAccount = lazy(() => import("./Profile/view/ProfileAccount"));
 const ProfileOrders = lazy(() => import("./Profile/view/ProfileOrders"));
 const ProfileSale = lazy(() => import("./Profile/view/ProfileSale"));
+const Compare = lazy(() => import("./Compare/view"));
 const ProfileSaleSingle = lazy(
   () => import("./Profile/view/ProfileSaleSingle")
 );
@@ -32,4 +33,5 @@ export {
   ProfileCard,
   ProfileSaleSingle,
   ProfileOutlet,
+  Compare,
 };

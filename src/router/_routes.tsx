@@ -14,6 +14,7 @@ import {
   ProductSingle,
   CategoryPage,
   ProfileSaleSingle,
+  Compare,
 } from "../views";
 
 export const _routes = [
@@ -29,6 +30,10 @@ export const _routes = [
   {
     path: APP_ROUTES.PRODUCTSINGLE,
     element: ProductSingle,
+  },
+  {
+    path: APP_ROUTES.COMPARE,
+    element: Compare,
   },
   {
     path: APP_ROUTES.BASKET,
@@ -52,7 +57,6 @@ export const _routes = [
     path: APP_ROUTES.PROFILE,
     element: Profile,
   },
-
   {
     path: APP_ROUTES.PROFILE,
     element: Profile,
