@@ -38,12 +38,12 @@ function MobileHeader({ setShow }: { setShow: any }) {
     },
   ];
   return (
-    <div className="fixed h-screen w-full left-0 top-0">
+    <div className="fixed h-screen w-full z-[1111] left-0 top-0">
       <div
         onClick={() => setShow(false)}
         className="bg-[#0000004d] absolute inset-0"
       ></div>
-      <ul className="w-[70%] py-4 rounded-r-[16px] bg-white h-full flex flex-col relative">
+      <ul className="w-[70%] py-4 rounded-r-[16px] bg-white h-full flex flex-col relative z-[1000]">
         <div className="w-full flex justify-center my-6">
           <Logo />
         </div>

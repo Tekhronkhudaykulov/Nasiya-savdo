@@ -6,6 +6,8 @@ export const APP_ROUTES = {
   CATEGORY: "/category",
   BASKET_FORM: "basket_form",
   FAVOURITE: "/favourite",
+  QUESTIONS: "/faq",
+  VACANCIES: "/vacancies",
   PROFILE: "/profile",
   PROFILE_ACCOUNT: "profile_account",
   PROFILE_ORDERS: "profile_orders",

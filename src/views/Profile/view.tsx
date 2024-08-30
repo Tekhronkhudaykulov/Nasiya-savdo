@@ -49,7 +49,7 @@ const Profile = () => {
         />
         <div className="grid xl:grid-cols-[320px_1fr] mt-5 grid-cols-[280px_1fr] 2md:grid-cols-1 gap-5 mb-[100px]">
           <div
-            className={`border-line border transition-transform duration-300 rounded-[24px] max-h-[385px] xl:p-[24px] p-5 2md:fixed bg-white sticky top-[90px] 2md:left-[0px] 2md:top-0 2md:rounded-none 2md:h-full 2md:z-[111] 2md:max-h-full ${
+            className={`border-line border transition-transform duration-300 rounded-[24px] max-h-[385px] xl:p-[24px] p-5 2md:fixed bg-white sticky top-[90px] 2md:left-[0px] 2md:top-0 2md:rounded-none 2md:h-full 2md:z-[11] 2md:max-h-full 2md:pt-[80px] ${
               show ? "2md:translate-x-[0%]" : "2md:translate-x-[-100%]"
             }`}
           >

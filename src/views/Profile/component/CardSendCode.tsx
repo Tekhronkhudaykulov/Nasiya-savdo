@@ -55,17 +55,22 @@ const CardSendCode: React.FC<SendNumProps> = ({ open, setOpen }) => {
   };
   return (
     <>
-      <Modal open={open} onCancel={handleCancel} footer={null} width={"28%"}>
+      <Modal
+        open={open}
+        onCancel={handleCancel}
+        footer={null}
+        className="md:!max-w-[400px] !max-w-[90%] !w-full"
+      >
         {open && (
           <div className="pt-[50px]">
-            <p className="text-[24px] font-[500] text-center">
+            <p className="md:text-[24px] text-[20px] font-[500] text-center">
               Подтверждение SMS кода
             </p>
-            <p className="text-[16px] leading-[19px] line-clamp-2 font-[500] mt-[6px] mb-[38px] text-txtSecondary2 text-center">
-              SMS с кодом отправлено на <br /> номер +
+            <p className="md:text-[16px] text-[12px] leading-[1.5] line-clamp-2 font-[500] mt-[6px] md:mb-[38px] mb-[24px] text-txtSecondary2 text-center">
+              SMS с кодом отправлено на номер <br /> +
               {maskPhoneNumber(phoneNumber)}
             </p>
-            <p className="text-[14px] font-[400] mb-[14px] text-txtSecondary2 text-center">
+            <p className="md:text-[14px] text-[12px] font-[400] mb-[14px] text-txtSecondary2 text-center">
               Введите код из смс
             </p>
             <VerificationInput
@@ -73,26 +78,32 @@ const CardSendCode: React.FC<SendNumProps> = ({ open, setOpen }) => {
               value={code}
               onChange={setCode}
               classNames={{
-                character: "outline-none bg-buttonBg border-none",
-                characterFilled: "text-gray",
-                container: "flex justify-between w-full mb-[39px]",
+                character:
+                  "outline-none md:text-[24px] text-[20px] rounded-[6px] bg-buttonBg border-transparent",
+                characterFilled: `text-gray border ${
+                  (code == "11111" && "!border-[red]") ||
+                  (code == "22222" && "!border-darkGreen")
+                }`,
+                container: "flex justify-between w-full md:mb-[39px] mb-[24px]",
+                characterInactive: "border-none",
+                characterSelected: "!border-darkGreen",
               }}
             />
 
             {isResendEnabled ? (
               <p
                 onClick={handleResendCode}
-                className="text-center cursor-pointer text-[#03A5A5] text-[14px] font-[400] mb-[50px]"
+                className="text-center cursor-pointer text-[#03A5A5] text-[14px] font-[400]"
               >
                 Отправить код повторно
               </p>
             ) : (
-              <p className="text-center text-mainBlack text-[14px] font-[400] mb-[50px]">
+              <p className="text-center text-mainBlack text-[14px] font-[400]">
                 {`00:${timer.toString().padStart(2, "0")}`}
               </p>
             )}
             <Button
-              className="!bg-darkGreen !text-white w-full h-[56px] rounded-[8px] text-[16px] font-[500]"
+              className="!bg-darkGreen !text-white w-full h-[46px] md:h-[56px] rounded-[8px] md:text-[16px] text-[14px] md:mt-[50px] mt-[30px] font-[500]"
               type="default"
               onClick={handleSubmit}
               disabled={code.length < 5}
