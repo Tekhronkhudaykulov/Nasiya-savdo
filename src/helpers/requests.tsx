@@ -46,6 +46,7 @@ export const requests = {
   productVariants: () => $api.get(`${API_URL}/api/v1/product-variants`),
   productVariantsDetail: (id: number) =>
     $api.get(`${API_URL}/api/v1/product-variants/detail?id=${id}`),
+<<<<<<< HEAD
   productVariantsFilter: () =>
     $api.get(
       `${API_URL}/api/v1/product-variants/category-products?id=6&option_values[0]=22`
@@ -53,6 +54,15 @@ export const requests = {
   productVariantsCategoryFilter: () =>
     $api.get(`${API_URL}/api/v1/product-variants/category-filters?id=6`),
   productVariantsByWith: () =>
+=======
+  productVariantsFilter: (_: any) =>
+    $api.get(
+      `${API_URL}/api/v1/product-variants/category-products?id=6&option_values[0]=22`
+    ),
+  productVariantsCategoryFilter: (_: any) =>
+    $api.get(`${API_URL}/api/v1/product-variants/category-filters?id=6`),
+  productVariantsByWith: (_: any) =>
+>>>>>>> refs/remotes/origin/elshod
     $api.get(`${API_URL}/api/v1/product-variants/buy-with?id=1`),
 
   // favourites

@@ -1,6 +1,6 @@
 // Define the classes for styling
-const pClass = `text-[14px] text-txtSecondary2`;
-const spanClass = `text-[14px] text-mainBlack font-medium`;
+const pClass = `md:text-[14px] text-[12px] text-txtSecondary2`;
+const spanClass = `md:text-[14px] text-[12px] text-mainBlack font-medium`;
 
 // Define the Order type
 interface Order {
@@ -19,8 +19,8 @@ interface Order {
 
 function OrderInfos({ order }: { order: Order }) {
   return (
-    <div className="flex flex-col gap-3 my-4">
-      <div className="grid grid-cols-[150px_1fr] gap-x-4 items-end">
+    <div className="flex flex-col gap-3 md:my-4 my-3">
+      <div className="grid md:grid-cols-[150px_1fr] grid-cols-[110px_1fr] gap-x-4 items-end">
         <p className={`${pClass}`}>Статус</p>
         <span
           className={`${
@@ -32,51 +32,51 @@ function OrderInfos({ order }: { order: Order }) {
           {order.status === "delivered" ? "Доставлено" : "В процессе доставки"}
         </span>
       </div>
-      <div className="grid grid-cols-[150px_1fr] gap-x-4">
+      <div className="grid md:grid-cols-[150px_1fr] grid-cols-[110px_1fr] gap-x-4">
         <p className={`${pClass}`}>Дата заказа</p>
         <span className={`${spanClass}`}>{order.orderDate}</span>
       </div>
       {order.sentDate && (
-        <div className="grid grid-cols-[150px_1fr] gap-x-4">
+        <div className="grid md:grid-cols-[150px_1fr] grid-cols-[110px_1fr] gap-x-4">
           <p className={`${pClass}`}>Дата отправки</p>
           <span className={`${spanClass}`}>{order.sentDate}</span>
         </div>
       )}
       {order.senderCity && (
-        <div className="grid grid-cols-[150px_1fr] gap-x-4">
+        <div className="grid md:grid-cols-[150px_1fr] grid-cols-[110px_1fr] gap-x-4">
           <p className={`${pClass}`}>Город отправителя</p>
           <span className={`${spanClass}`}>{order.senderCity}</span>
         </div>
       )}
       {order.senderLocation && (
-        <div className="grid grid-cols-[150px_1fr] gap-x-4">
+        <div className="grid md:grid-cols-[150px_1fr] grid-cols-[110px_1fr] gap-x-4">
           <p className={`${pClass}`}>Место отправки</p>
           <span className={`${spanClass}`}>{order.senderLocation}</span>
         </div>
       )}
       {order.productWeight && (
-        <div className="grid grid-cols-[150px_1fr] gap-x-4">
+        <div className="grid md:grid-cols-[150px_1fr] grid-cols-[110px_1fr] gap-x-4">
           <p className={`${pClass}`}>Вес товара</p>
           <span className={`${spanClass}`}>{order.productWeight}</span>
         </div>
       )}
       {order.productVolume && (
-        <div className="grid grid-cols-[150px_1fr] gap-x-4">
+        <div className="grid md:grid-cols-[150px_1fr] grid-cols-[110px_1fr] gap-x-4">
           <p className={`${pClass}`}>Обьем товара</p>
           <span className={`${spanClass}`}>{order.productVolume}</span>
         </div>
       )}
-      <div className="grid grid-cols-[150px_1fr] gap-x-4">
+      <div className="grid md:grid-cols-[150px_1fr] grid-cols-[110px_1fr] gap-x-4">
         <p className={`${pClass}`}>Место доставки</p>
         <span className={`${spanClass}`}>{order.deliveryLocation}</span>
       </div>
       {order.shipmentDate && (
-        <div className="grid grid-cols-[150px_1fr] gap-x-4">
+        <div className="grid md:grid-cols-[150px_1fr] grid-cols-[110px_1fr] gap-x-4">
           <p className={`${pClass}`}>Дата доставки</p>
           <span className={`${spanClass}`}>{order.shipmentDate}</span>
         </div>
       )}
-      <div className="grid grid-cols-[150px_1fr] gap-x-4">
+      <div className="grid md:grid-cols-[150px_1fr] grid-cols-[110px_1fr] gap-x-4">
         <p className={`${pClass}`}>Сумма заказа</p>
         <span className={`${spanClass}`}>{order.price} сум</span>
       </div>

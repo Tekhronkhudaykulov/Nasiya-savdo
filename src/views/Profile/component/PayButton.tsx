@@ -18,7 +18,7 @@ function PayButton() {
       {show && <ChooseCardPopUp setShow={setShow} />}
       <button
         onClick={() => setShow(true)}
-        className="text-[16px] ml-auto max-w-[330px] w-full font-medium p-[14px] bg-darkGreen rounded-[8px] text-white"
+        className="md:text-[16px] text-[14px] ml-auto max-w-[330px] w-full font-medium md:p-[14px] p-[10px] bg-darkGreen md:rounded-[8px] rounded-[4px] text-white"
       >
         Оплатить
       </button>

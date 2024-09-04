@@ -5,10 +5,10 @@ function CategoryPage() {
   return (
     <>
       <Categories />
-      <h1 className="text-[24px] mt-[36px] mb-[20px] text-txtSecondary2 font-normal">
+      <h1 className="md:text-[24px] text-[20px] mt-[36px] 2md:mt-5 md:mb-[20px] mb-4 text-txtSecondary2 font-normal">
         Категории
       </h1>
-      <div className="grid lg:grid-cols-[285px_1fr] gap-5">
+      <div className="grid grid-cols-[285px_1fr] 2md:grid-cols-1 gap-5">
         <CategLeft />
         <CategRight />
       </div>

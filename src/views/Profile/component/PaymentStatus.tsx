@@ -9,7 +9,7 @@ const statusStyles: Record<PaymentStatus, string> = {
 function PaymentStatus({ status }: { status: PaymentStatus }) {
   return (
     <span
-      className={`font-medium text-[14px] border p-[8px_16px] rounded-[4px] ${statusStyles[status]}`}
+      className={`font-medium md:text-[14px] text-[12px] border md:p-[8px_16px] p-[6px_12px] rounded-[4px] ${statusStyles[status]}`}
     >
       {status}
     </span>

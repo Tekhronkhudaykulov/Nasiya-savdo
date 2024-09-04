@@ -4,13 +4,14 @@ import { _routes } from "./_routes";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 import PrivateRoute from "./PrivateRoute";
 import { initApp } from "../helpers/api";
+import Loader from "../components/PageLoader/Loader";
 
 const Router = () => {
   initApp();
 
   return (
     <HashRouter>
-      <Suspense>
+      <Suspense fallback={<Loader />}>
         <Routes>
           {_routes?.map(({ path, element: Component, childs }, idx) =>
             childs && childs?.length > 0 ? (

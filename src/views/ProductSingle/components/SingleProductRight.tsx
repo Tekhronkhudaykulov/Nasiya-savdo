@@ -16,7 +16,7 @@ function SingleProductRight() {
   const [isFavourite, setIsFavourite] = useState(false);
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center 2md:justify-between md:gap-[30px] gap-[12px]">
+      <div className="flex items-center justify-between md:gap-[30px] lg:gap-[20px] xl:gap-[30px] gap-[12px]">
         <button className="text-mainBlack flex md:gap-[12px] gap-[8px] items-center">
           <Scale />
           <span className="md:text-[14px] text-[10px]">Сравнить</span>

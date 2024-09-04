@@ -24,7 +24,7 @@ function ProductSingle() {
   return (
     <>
       <BreadCrumb items={[{ name: "Продукт название" }]} />
-      <div className="grid lg:grid-cols-[2fr,1fr] gap-[28px] md:mb-[60px] mb-6">
+      <div className="grid xl:grid-cols-[2fr,1fr] grid-cols-1 lg:grid-cols-[1.5fr,1fr] gap-[28px] md:mb-[60px] mb-6">
         <SingleProductLeft
           setAboutPopUp={setAboutPopUp}
           setReviewPoUp={setReviewPoUp}

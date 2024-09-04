@@ -8,9 +8,9 @@ function MyOrdersTabs({
   activeTab: string;
 }) {
   return (
-    <div className="flex gap-x-[12px] justify-start">
+    <div className="flex md:gap-x-[12px] gap-3 justify-start">
       <Button
-        className={`max-md:px-4 max-md:text-[14px]  ${
+        className={`!text-[12px] md:!text-[14px] ${
           activeTab === "all" ? "active-orders-button" : "default"
         } `}
         onClick={() => setActiveTab("all")}
@@ -18,7 +18,7 @@ function MyOrdersTabs({
         Все
       </Button>
       <Button
-        className={`max-md:px-4 max-md:text-[14px]  ${
+        className={`!text-[12px] md:!text-[14px] ${
           activeTab === "progress" ? "active-orders-button" : "default"
         } `}
         onClick={() => setActiveTab("progress")}
@@ -26,7 +26,7 @@ function MyOrdersTabs({
         В процессе
       </Button>
       <Button
-        className={`max-md:px-4 max-md:text-[14px]  ${
+        className={`!text-[12px] md:!text-[14px] ${
           activeTab === "delivered" ? "active-orders-button" : "default"
         } `}
         onClick={() => setActiveTab("delivered")}

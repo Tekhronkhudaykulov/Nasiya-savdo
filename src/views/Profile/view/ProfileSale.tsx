@@ -199,7 +199,7 @@ const ProfileSale = () => {
         <SaleTabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
         {filteredPlans.length > 0 ? (
-          <div className="flex flex-col gap-4 mt-5">
+          <div className="flex flex-col md:gap-4 gap-3 md:mt-5 mt-4">
             {filteredPlans.map((plan, index) => (
               <PaymentInfoCard key={index} plan={plan} />
             ))}

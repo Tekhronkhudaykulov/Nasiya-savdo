@@ -20,11 +20,11 @@ function AnorCard({
         </span>
         <div className="flex justify-between items-center">
           <img
-            className="h-[18px] w-auto"
+            className="md:h-[18px] h-[16px] w-auto"
             src={ASSETS.AnorBank}
             alt="anor bank"
           />
-          <span className="text-mainBlack font-semibold text-[14px]">
+          <span className="text-mainBlack font-semibold md:text-[14px] text-[12px]">
             35 000 сум/мес
           </span>
         </div>
